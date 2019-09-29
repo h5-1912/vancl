@@ -1,0 +1,28 @@
+body,html,p,ul,li,ol,dt,dl,dd,form,a,img,input,span,h1,h2,h3,h4,h5,h6,table,tr,td,th,i,b,strong,em{padding:0; margin: 0;}
+a{
+	text-decoration: none; color:#333;
+}
+a:hover{
+	text-decoration: underline;
+}
+ul li,ol li{
+	list-style: none;
+}
+img{
+	vertical-align: top; border: none;
+}
+input{
+	cursor:pointer;
+}
+body{
+	font-family: "微软雅黑"; font-size: 12px; 
+}
+.clearfix:after{
+	content:""; visibility: hidden; display: block; clear:both; height: 0; font-size: 0; overflow: hidden;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
