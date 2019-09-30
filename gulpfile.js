@@ -23,7 +23,7 @@ gulp.task('css',function(done){
 
 	gulp.src('./css/*.scss')
 	.pipe(loader.sass())
-	// .pipe(loader.minifyCss())
+	.pipe(loader.minifyCss())
 	.pipe(gulp.dest('./dist/css/'))
 
 	done()

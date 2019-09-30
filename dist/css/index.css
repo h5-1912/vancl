@@ -1,14 +1,1 @@
-body {
-  background: pink; }
-  body div {
-    background: blue;
-    width: 500px;
-    height: 500px;
-    position: fixed;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    margin: auto; }
-  body p {
-    text-align: center; }
+body{background:pink}body div{background:#00f;width:500px;height:500px;position:fixed;top:0;bottom:0;left:0;right:0;margin:auto}body p{text-align:center}
