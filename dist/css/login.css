@@ -1,0 +1,178 @@
+body, html {
+  height: 100%;
+  margin: 0 auto; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.top-con {
+  width: 1200px;
+  margin: 0 auto;
+  height: 56px;
+  font-size: 12px;
+  position: relative; }
+  .top-con h1 {
+    width: 187px;
+    height: 50px;
+    display: inline-block; }
+  .top-con span {
+    position: absolute;
+    right: 0;
+    bottom: 10px; }
+    .top-con span a {
+      color: black; }
+
+.main-con {
+  border-bottom: 1px solid black;
+  width: 1200px;
+  height: 473px;
+  margin: 50px auto 10px; }
+  .main-con .mleft {
+    float: left;
+    margin: 18px 0 0 150px; }
+  .main-con .mright {
+    float: right;
+    margin: 10px 100px 0 0;
+    border: 1px solid #D1D1D1; }
+  .main-con .h {
+    width: 1200px;
+    height: 25px; }
+    .main-con .h h3 {
+      font-size: 22px;
+      position: relative;
+      display: block;
+      width: 400px;
+      height: 25px;
+      margin: 0 100px 0 0;
+      color: #979797;
+      font-weight: bold;
+      text-align: left;
+      float: right; }
+      .main-con .h h3 span {
+        font-size: 14px;
+        font-weight: normal;
+        position: absolute;
+        right: 0px;
+        bottom: 0px; }
+        .main-con .h h3 span a {
+          color: #b42025; }
+
+.bottom {
+  width: 1200px;
+  margin: 0 auto; }
+
+.lines {
+  height: 2px;
+  width: 400px;
+  margin: 30px 0 0;
+  border-bottom: 1px dashed black;
+  float: left; }
+
+.blank10 {
+  height: 10px;
+  width: 360px;
+  display: block;
+  float: left; }
+
+.tag {
+  width: 400px;
+  height: 36px;
+  border-bottom: 1px solid #cbcbcb;
+  line-height: 35px; }
+
+.tags {
+  margin: 0;
+  padding: 0; }
+  .tags li {
+    display: inline-block;
+    float: left;
+    text-align: center;
+    font-weight: bold; }
+    .tags li a {
+      display: block;
+      width: 200px;
+      height: 35px;
+      color: white; }
+  .tags li:nth-child(1) {
+    background: #b42025; }
+  .tags li:nth-child(2) {
+    background: #f5f5f5; }
+    .tags li:nth-child(2) a {
+      color: #656565; }
+
+.shows {
+  width: 400px;
+  height: 362px; }
+  .shows .userinfo {
+    width: 415px;
+    padding: 10px 20px 10px;
+    float: left; }
+    .shows .userinfo input {
+      border: 1px solid #cbcbcb;
+      height: 45px;
+      width: 360px;
+      float: left;
+      line-height: 45px;
+      color: #656565;
+      text-indent: 10px; }
+    .shows .userinfo input:nth-of-type(3) {
+      background: #b42025;
+      border: 1px solid #b42025;
+      color: white;
+      font-weight: bold;
+      font-size: 20px; }
+    .shows .userinfo span a {
+      float: right;
+      display: block;
+      margin: 10px 70px 10px 0;
+      color: #b42025;
+      font-weight: bold;
+      line-height: 30px; }
+
+.partner {
+  margin: 10px 20px; }
+  .partner a {
+    height: 33px;
+    width: 33px;
+    margin-right: 10px;
+    display: block;
+    float: left; }
+  .partner h2 {
+    margin: 0;
+    color: #a4a4a4;
+    font-size: 18px;
+    font-size: 18px;
+    font-weight: bold; }
+
+.weixin {
+  background: url(../images/index/logos.jpg) no-repeat left center;
+  background-position: 0 0; }
+
+.xiaomi {
+  background: url(../images/index/logos.jpg) no-repeat left center;
+  background-position: -147px 0; }
+
+.zhifubao {
+  background: url(../images/index/logos.jpg) no-repeat left center;
+  background-position: -48px 0; }
+
+.qq {
+  background: url(../images/index/logos.jpg) no-repeat left center;
+  background-position: -189px 0; }
+
+.qihu360 {
+  background: url(../images/index/logos.jpg) no-repeat left center;
+  background-position: -228px 0; }
+
+.weibo {
+  background: url(../images/index/logos.jpg) no-repeat left center;
+  background-position: -93px 0; }
+
+.bottom {
+  margin: 0 auto;
+  width: 1200px;
+  text-align: center;
+  color: #999999; }
