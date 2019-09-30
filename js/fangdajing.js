@@ -50,3 +50,11 @@ small.onmouseover=function(e){
     }
 }
 
+window.onscroll=function(){
+    if(scroll().top>=600) {
+        $(".title-product-hidden").css({"position":"fixed","display":"block","top":0,"width":"100%"})
+    }else{
+     $(".title-product-hidden").css({"position":"fixed","display":"none","top":0,"width":"100%"})
+    }
+      
+ }

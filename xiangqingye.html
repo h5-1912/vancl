@@ -13,17 +13,16 @@
 </head>
 
 <body>
-        <div class="title-product-hidden">
-                <h3 class="title-product-left"> T恤山&nbsp;鸟叔&nbsp;小寒&nbsp;白色<span
-                        class="colorRed">&nbsp;&nbsp;此商品一个账户限购一件</span>
-                </h3>
-                <ul class="title-product-right-hidden">
-                    <li><a href="#mainBoxPoint">产品描述</a></li>
-                    <li><a href="#evaluate-boxPoint">评论</a></li>
-                    <li><a href="#ask-OutboxPoint">提问</a></li>
-                    <li><a href="#">加入购物车</a></li>
-                </ul>
-        </div>
+    <div class="title-product-hidden">
+        <h3 class="title-product-left"> T恤山&nbsp;鸟叔&nbsp;小寒&nbsp;白色<span class="colorRed">&nbsp;&nbsp;此商品一个账户限购一件</span>
+        </h3>
+        <ul class="title-product-right-hidden">
+            <li><a href="#mainBoxPoint">产品描述</a></li>
+            <li><a href="#evaluate-boxPoint">评论</a></li>
+            <li><a href="#ask-OutboxPoint">提问</a></li>
+            <li><a href="#">加入购物车</a></li>
+        </ul>
+    </div>
     <div class="wrap">
         <ul class="nav-list">
             <li><a href="#">首页 &#62</a></li>
@@ -43,7 +42,7 @@
             </ul>
         </div>
 
-        
+
         <!--=============== title-product-box end ======-->
         <div class="product">
             <div class="thumbnail-box">
@@ -82,20 +81,20 @@
                 <ul class="checkbox-color">
                     <span class="checkbox-color-items  ">颜色:</span>
 
-                    <li><img src="./images/xiangqing/bigPicWhite.jpg" alt="">白色</li>
-                    <li><img src="./images/xiangqing/bigPicBlack.jpg" alt="">黑色</li>
+                    <li class="checkbox-color-white"><img src="./images/xiangqing/bigPicWhite.jpg" alt="">白色</li>
+                    <li class="checkbox-color-black"><img src="./images/xiangqing/bigPicBlack.jpg" alt="">黑色</li>
 
                 </ul>
                 <div class="clearfix"></div>
 
                 <ul class="checkbox-size">
                     <span class="checkbox-color-items">尺码:</span>
-                    <li>XS</li>
-                    <li>S</li>
-                    <li>M</li>
-                    <li>L</li>
-                    <li>XL</li>
-                    <li>XXL</li>
+                    <li class="XS">XS</li>
+                    <li class="S">S</li>
+                    <li class="M">M</li>
+                    <li class="L">L</li>
+                    <li class="XL">XL</li>
+                    <li class="XXL">XXL</li>
                 </ul>
                 <div class="clearfix"></div>
 
@@ -185,7 +184,7 @@
             </ul>
         </div>
         <div class="evaluate-box" id="evaluate-boxPoint">
-            <div class="radio-box" >
+            <div class="radio-box">
                 <h2>最新评价(<span>4</span>)</h2>
                 <input type="radio" id="allBtn" name="allChose">全部评论
                 <input type="radio" id="picBtn" name="allChose">图片(<span>0</span>)
@@ -305,61 +304,102 @@
 
         $(".thumbnail1").click(function () {
             $(".thumbnail1").css({
-                "border": "1px solid red","width":"70","height":"70"
+                "border": "1px solid red",
+                "width": "70",
+                "height": "70"
             })
             $(".thumbnail2").css({
-                "border": "none","width":"72","height":"72"
+                "border": "none",
+                "width": "72",
+                "height": "72"
             });
-            $("#small").children("img").attr("src", "./images/xiangqing/smallpicWhite.jpg")
+
+
+            if ($(this).css('background-image').substr(-21, 15) == "joinimagesWhite") {
+
+                $("#small").children("img").attr("src", "./images/xiangqing/smallpicWhite.jpg")
+                $("#bigImg").attr("src", "./images/xiangqing/bigpicWhite.jpg");
+            } else {
+                $("#small").children("img").attr("src", "./images/xiangqing/smallPicBlack.jpg")
+                $("#bigImg").attr("src", "./images/xiangqing/bigPicBlack.jpg");
+            }
+
+
         })
 
         $(".thumbnail2").click(function () {
 
             $(".thumbnail2").css({
-                "border": "1px solid red","width":"70","height":"70"
+                "border": "1px solid red",
+                "width": "70",
+                "height": "70"
             })
             $(".thumbnail1").css({
-                "border": "none","width":"72","height":"72"
+                "border": "none",
+                "width": "72",
+                "height": "72"
             });
-            $("#small").children("img").attr("src", "./images/xiangqing/smallpicWhite2.jpg")
-            $("#bigImg").attr("src", "./images/xiangqing/bigpicWhite2.jpg");
+            if ($(this).css('background-image').substr(-21, 15) == "joinimagesWhite") {
+
+                $("#small").children("img").attr("src", "./images/xiangqing/smallpicWhite2.jpg")
+                $("#bigImg").attr("src", "./images/xiangqing/bigpicWhite2.jpg");
+            } else {
+                $("#small").children("img").attr("src", "./images/xiangqing/smallPicBlack2.jpg")
+                $("#bigImg").attr("src", "./images/xiangqing/bigPicBlack2.jpg");
+            }
+        })
+
+        $(".checkbox-color-white").click(function () {
+            $(this).css({
+                "border": "1px solid #c82f2a"
+            }).siblings().css({
+                "border": "1px solid #b3b3b3"
+            })
+            $("#small").children("img").attr("src", "./images/xiangqing/smallpicWhite.jpg");
+            $("#bigImg").attr("src", "./images/xiangqing/bigpicWhite.jpg");
+
+            $(".thumbnail1").css({
+                "background": "url('./images/xiangqing/joinimagesWhite.jpg')   no-repeat"
+            })
+
+            $(".thumbnail2").css({
+                "background": "url('./images/xiangqing/joinimagesWhite.jpg') 0 -66px no-repeat"
+            })
 
         })
-    //     var date=new Date()
-    //     var HdDate=new Date("2019-10-30")
-    //    var Daytime=parseInt(difTime( date,HdDate)/60/60/24) ;
-    //     var Htime=parseInt(difTime(date,HdDate)/60/60%24)
-    //     var Mtime=parseInt(difTime(date,HdDate)/60%60)
-      
-    //     console.log(Daytime,Htime,Mtime)
-    //     setInterval(function(){
-    //         var Mtime=Math.floor(difTime(date,HdDate)%60)
-    //         console.log(Mtime)
-    //     },1000)
-      
+        $(".checkbox-color-black").click(function(){
+            $(this).css({
+                "border": "1px solid #c82f2a"
+            }).siblings().css({
+                "border": "1px solid #b3b3b3"
+            })
+            $("#small").children("img").attr("src", "./images/xiangqing/smallpicBlack.jpg");
+            $("#bigImg").attr("src", "./images/xiangqing/bigpicBlack.jpg");
+
+            $(".thumbnail1").css({
+                "background": "url('./images/xiangqing/joinimagesBlack.jpg')   no-repeat"
+            })
+
+            $(".thumbnail2").css({
+                "background": "url('./images/xiangqing/joinimagesBlack.jpg') 0 -66px no-repeat"
+            })
+        })
+
+
 
         function getRTime() {
-        var EndTime = new Date("2019/11/01 00:00:00"); //截止时间
-        var NowTime = new Date();
-        var t = EndTime.getTime() - NowTime.getTime();
-        var d = Math.floor(t / 1000 / 60 / 60 / 24);
-        var h = Math.floor(t / 1000 / 60 / 60 % 24);
-        var m = Math.floor(t / 1000 / 60 % 60);
-        var s = Math.floor(t / 1000 % 60);   
+            var EndTime = new Date("2019/11/01 00:00:00"); //截止时间
+            var NowTime = new Date();
+            var t = EndTime.getTime() - NowTime.getTime();
+            var d = Math.floor(t / 1000 / 60 / 60 / 24);
+            var h = Math.floor(t / 1000 / 60 / 60 % 24);
+            var m = Math.floor(t / 1000 / 60 % 60);
+            var s = Math.floor(t / 1000 % 60);
 
-        $(".huodongtimeBox").html(d+"天:"+h+ "时:"+m+"分:"+s+"秒")    
-}
-setInterval(getRTime, 1000);
+            $(".huodongtimeBox").html(d + "天:" + h + "时:" + m + "分:" + s + "秒")
+        }
+        setInterval(getRTime, 1000);
     })
-
-    window.onscroll=function(){
-       if(scroll().top>=600) {
-           $(".title-product-hidden").css({"position":"fixed","display":"block","top":0,"width":"100%"})
-       }else{
-        $(".title-product-hidden").css({"position":"fixed","display":"none","top":0,"width":"100%"})
-       }
-         
-    }
 </script>
 
 </html>
