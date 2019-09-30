@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <div id="show" style="position: absolute;top:0;left:0;"></div>
     <div class="title-product-hidden">
         <h3 class="title-product-left"> T恤山&nbsp;鸟叔&nbsp;小寒&nbsp;白色<span class="colorRed">&nbsp;&nbsp;此商品一个账户限购一件</span>
         </h3>
@@ -89,35 +90,40 @@
 
                 <ul class="checkbox-size">
                     <span class="checkbox-color-items">尺码:</span>
-                    <li class="XS">XS</li>
-                    <li class="S">S</li>
-                    <li class="M">M</li>
-                    <li class="L">L</li>
-                    <li class="XL">XL</li>
-                    <li class="XXL">XXL</li>
+                    <li class="productSize XS">XS</li>
+                    <li class="productSize S">S</li>
+                    <li class="productSize M">M</li>
+                    <li class="productSize L">L</li>
+                    <li class="productSize XL">XL</li>
+                    <li class="productSize XXL">XXL</li>
                 </ul>
                 <div class="clearfix"></div>
 
                 <span class="checkbox-color-items">数量:</span>
                 <select class="selectBtn">
-                    <option value="">1</option>
-                    <option value="">2</option>
-                    <option value="">3</option>
-                    <option value="">4</option>
-                    <option value="">5</option>
-                    <option value="">6</option>
-                    <option value="">7</option>
-                    <option value="">8</option>
-                    <option value="">9</option>
-                    <option value="">10</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
                 </select>
                 <div class="clearfix"></div>
 
                 <span class="checkbox-color-items ">已选:</span>
-                <span class="checkedVal">白色</span> <span class="colorRed">现在有货</span>
+                <span class="checkedVal">白色</span>
+                <span class="checkedSizeVal"></span>
+                <span class="colorRed">现在有货</span>
                 <div class="clearfix"></div>
+                <!-- <form method="get" > -->
                 <input type="button" value="立即购买" class="buyNow">
                 <input type="button" value="加入购物车" class="cartBtn">
+
+                <!-- </form> -->
                 <div class="clearfix"></div>
                 <div class="line-box">
                     <h4><span class="colorRed">优惠提示</span></h4>
@@ -352,6 +358,12 @@
         $(".checkbox-color-white").click(function () {
             $(this).css({
                 "border": "1px solid #c82f2a"
+            }).siblings("li").has("img").css({
+                "border": "1px solid #b3b3b3"
+            })
+            $(".checkedVal").html($(".checkbox-color-white").text())
+            $(".thumbnail1").css({
+                "border": "1px solid #c82f2a"
             }).siblings().css({
                 "border": "1px solid #b3b3b3"
             })
@@ -367,10 +379,16 @@
             })
 
         })
-        $(".checkbox-color-black").click(function(){
+        $(".checkbox-color-black").click(function () {
             $(this).css({
                 "border": "1px solid #c82f2a"
-            }).siblings().css({
+            }).siblings().has("img").css({
+                "border": "1px solid #b3b3b3"
+            })
+            $(".checkedVal").html($(".checkbox-color-black").text());
+            $(".thumbnail1").css({
+                "border": "1px solid #c82f2a"
+            }).siblings("li").css({
                 "border": "1px solid #b3b3b3"
             })
             $("#small").children("img").attr("src", "./images/xiangqing/smallpicBlack.jpg");
@@ -384,6 +402,40 @@
                 "background": "url('./images/xiangqing/joinimagesBlack.jpg') 0 -66px no-repeat"
             })
         })
+        //产品尺寸按键;
+        $(".productSize").click(function () {
+            $(this).css({
+                "border": "1px solid #c82f2a"
+            }).siblings("li").css({
+                "border": "1px solid #b3b3b3"
+            })
+            $(".checkedSizeVal").text($(this).text())
+        })
+
+
+        //立即购买按键
+        $(".buyNow").click(function () {
+            var checkVal = $(".checkedVal").html()
+            var checkedSizeVal = $(".checkedSizeVal").text()
+            var productNum = $(".selectBtn").children().value;
+            var productNum = parseInt($(".selectBtn")[0].value);
+
+            // window.location.href="./mycart.html"
+            window.location.href = "./mycart.html?color=" + checkVal + "&size=" + checkedSizeVal +
+                "&num=" + productNum
+        })
+        //加入购物车按键
+        $(".cartBtn").click(function () {
+            var checkVal = $(".checkedVal").html()
+            var checkedSizeVal = $(".checkedSizeVal").text()
+            var productNum = $(".selectBtn").children().value;
+            var productNum = parseInt($(".selectBtn")[0].value);
+
+            // window.location.href="./mycart.html"
+            window.location.href = "./mycart.html?color=" + checkVal + "&size=" + checkedSizeVal +
+                "&num=" + productNum
+        })
+
 
 
 
