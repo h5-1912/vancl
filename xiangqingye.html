@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,22 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/xiangqing.css">
+
+
 </head>
+
 <body>
+        <div class="title-product-hidden">
+                <h3 class="title-product-left"> T恤山&nbsp;鸟叔&nbsp;小寒&nbsp;白色<span
+                        class="colorRed">&nbsp;&nbsp;此商品一个账户限购一件</span>
+                </h3>
+                <ul class="title-product-right-hidden">
+                    <li><a href="#mainBoxPoint">产品描述</a></li>
+                    <li><a href="#evaluate-boxPoint">评论</a></li>
+                    <li><a href="#ask-OutboxPoint">提问</a></li>
+                    <li><a href="#">加入购物车</a></li>
+                </ul>
+        </div>
     <div class="wrap">
         <ul class="nav-list">
             <li><a href="#">首页 &#62</a></li>
@@ -18,35 +33,333 @@
             <li><a href="#">T恤 山鸟叔 小寒</a></li>
         </ul>
         <div class="title-product-box">
-            <h3 class="title-product-left"> T恤山&nbsp鸟叔&nbsp小寒&nbsp白色<span class="colorRed">&nbsp&nbsp此商品一个账户限购一件</span></h3>
+            <h3 class="title-product-left"> T恤山&nbsp;鸟叔&nbsp;小寒&nbsp;白色<span
+                    class="colorRed">&nbsp;&nbsp;此商品一个账户限购一件</span>
+            </h3>
             <ul class="title-product-right">
-                <li><a href="#">产品描述</a></li>
-                <li><a href="#">评论</a></li>
-                <li><a href="#">提问</a></li>
+                <li><a href="#mainBoxPoint">产品描述</a></li>
+                <li><a href="#evaluate-boxPoint">评论</a></li>
+                <li><a href="#ask-OutboxPoint">提问</a></li>
             </ul>
         </div>
+
+        
         <!--=============== title-product-box end ======-->
         <div class="product">
             <div class="thumbnail-box">
-            <div class="thumbnail1"></div>
-            <div class="thumbnail2"></div>
+                <div class="thumbnail1"></div>
+                <div class="thumbnail2"></div>
             </div>
-            
-            <div class="bigPic-box">
-                <img src="./images/xiangqing/bigPicWhite.jpg" alt="">
-                <div class="bigPic-box-bottom">
-                    <div class="bigPic-box-bottom-left">
-                        <span class="befPrice ">原价:￥118.00</span>
-                        <span class="after1">充值后相当于￥</span>
-                        <span class="after2">9.00</span>
+            <div id="box">
+                <div id="small">
+                    <img src="./images/xiangqing/smallpicWhite.jpg" alt="">
+                    <div id="mask"></div>
+                    <div class="bigPic-box-bottom">
+                        <div class="bigPic-box-bottom-left">
+                            <span class="befPrice ">原价:￥118.00</span>
+                            <span class="after1">充值后相当于￥
+                            </span>
+                            <span class="after2">9.00</span>
+
+                        </div>
+                        <div class="bigPic-box-bottom-right">
+                            <span class="huodongtime">距离结束仅剩</span>
+                            <span class="huodongtimeBox"></span>
+                        </div>
                     </div>
-                    <div class="bigPic-box-bottom-right"></div>
+                </div>
+                <div id="big">
+                    <img src="./images/xiangqing/bigPicWhite.jpg" id="bigImg">
                 </div>
             </div>
 
+            <!-- bigPic-box end -->
+            <div class="product-right">
+                <h6 class="H6title">限时抢购价：¥
+                    <span class="H6price">18.00</span>
+                    <span><a href="#"> &nbsp;&nbsp;&nbsp;充100返10，点击充值 </a></span>
+                </h6>
+                <ul class="checkbox-color">
+                    <span class="checkbox-color-items  ">颜色:</span>
+
+                    <li><img src="./images/xiangqing/bigPicWhite.jpg" alt="">白色</li>
+                    <li><img src="./images/xiangqing/bigPicBlack.jpg" alt="">黑色</li>
+
+                </ul>
+                <div class="clearfix"></div>
+
+                <ul class="checkbox-size">
+                    <span class="checkbox-color-items">尺码:</span>
+                    <li>XS</li>
+                    <li>S</li>
+                    <li>M</li>
+                    <li>L</li>
+                    <li>XL</li>
+                    <li>XXL</li>
+                </ul>
+                <div class="clearfix"></div>
+
+                <span class="checkbox-color-items">数量:</span>
+                <select class="selectBtn">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                    <option value="">6</option>
+                    <option value="">7</option>
+                    <option value="">8</option>
+                    <option value="">9</option>
+                    <option value="">10</option>
+                </select>
+                <div class="clearfix"></div>
+
+                <span class="checkbox-color-items ">已选:</span>
+                <span class="checkedVal">白色</span> <span class="colorRed">现在有货</span>
+                <div class="clearfix"></div>
+                <input type="button" value="立即购买" class="buyNow">
+                <input type="button" value="加入购物车" class="cartBtn">
+                <div class="clearfix"></div>
+                <div class="line-box">
+                    <h4><span class="colorRed">优惠提示</span></h4>
+                    <div>免邮 </div>
+                    <span>全场购物满199元免运费</span>
+                    <h4> </h4>
+                </div>
+
+            </div>
         </div>
-        <!-- ======wrap end ======-->
+        <!-- product end -->
+        <h5> 详情图片：
+
+            <p>注： 商品实际颜色以静物图为准</p>
+        </h5>
+        <div class="mainBox" id="mainBoxPoint">
+            <div><img src="./images/xiangqing/6384567g.jpg" alt=""></div>
+
+            <div><img src="./images/xiangqing/6385229_01.jpg" alt=""></div>
+            <div><img src="./images/xiangqing/6385241_02.jpg" alt=""></div>
+            <div><img src="./images/xiangqing/6385241_03.jpg" alt=""></div>
+            <div><img src="./images/xiangqing/6384072g_04.jpg" alt=""></div>
+            <div><img src="./images/xiangqing/6384072g_05.jpg" alt=""></div>
+            <div><img src="./images/xiangqing/dpypc_01_01.jpg" alt=""></div>
+            <div><img src="./images/xiangqing/pc.jpg" alt=""></div>
+            <div><img src="./images/xiangqing/dpypc_01_03.jpg" alt=""></div>
+            <div><img src="./images/xiangqing/dpypc_01_04.jpg" alt=""></div>
+            <div><img src="./images/xiangqing/dpypc_01_05.jpg " alt=""></div>
+            <div><img src="./images/xiangqing/dpypc_02.jpg " alt=""></div>
+            <div><img src="./images/xiangqing/dpypc_03.jpg " alt=""></div>
+            <div><img src="./images/xiangqing/dpypc_01_04.jpg " alt=""></div>
+            <div><img src="./images/xiangqing/dpypc_05.jpg " alt=""></div>
+            <div><img src="./images/xiangqing/dpypc_06.jpg " alt=""></div>
+            <div><img src="./images/xiangqing/dpypc_07.jpg " alt=""></div>
+        </div>
+        <div class="Recommend-box">
+            <ul class="Recommend">
+                <h2>推荐产品</h2>
+                <li><img src="./images/blouse/6375086-1j201709181534480233.jpg" alt="">
+                    <p>凡客日式免烫衬衫温莎
+                        领灰色</p>
+                    <span>售价￥398</span>
+                </li>
+                <li><img src="./images/blouse/6375086-1j201709181534480233.jpg" alt="">
+                    <p>凡客日式免烫衬衫温莎
+                        领灰色</p>
+                    <span>售价￥398</span>
+                </li>
+                <li><img src="./images/blouse/6375086-1j201709181534480233.jpg" alt="">
+                    <p>凡客日式免烫衬衫温莎
+                        领灰色</p>
+                    <span>售价￥398</span>
+                </li>
+                <li><img src="./images/blouse/6375086-1j201709181534480233.jpg" alt="">
+                    <p>凡客日式免烫衬衫温莎
+                        领灰色</p>
+                    <span>售价￥398</span>
+                </li>
+                <li><img src="./images/blouse/6375086-1j201709181534480233.jpg" alt="">
+                    <p>凡客日式免烫衬衫温莎
+                        领灰色</p>
+                    <span>售价￥398</span>
+                </li>
+            </ul>
+        </div>
+        <div class="evaluate-box" id="evaluate-boxPoint">
+            <div class="radio-box" >
+                <h2>最新评价(<span>4</span>)</h2>
+                <input type="radio" id="allBtn" name="allChose">全部评论
+                <input type="radio" id="picBtn" name="allChose">图片(<span>0</span>)
+                <div class="sayBtn"><span><a href="#">我要评论</a></span></div>
+            </div>
+
+            <div class="contain-left">
+                <div>
+                    <span>很好合身，图案也很满意</span>
+
+                    <span class="containTime">2019-09-02</span>
+                </div>
+
+                <div class="contain-right">
+                    <span>颜色：白色 </span>
+                    <span>尺码：M</span>
+                    <span> 身高：0cm</span>
+                    <span>体重：0.0kg</span>
+                    <span>尺码合适</span>
+                </div>
+
+            </div>
+            <div class="buyerName">
+                <span>客户名字</span>
+            </div>
+            <!-- contain end -->
+            <div class="contain-left">
+                <div>
+                    <span>很好合身，图案也很满意</span>
+
+                    <span class="containTime">2019-09-02</span>
+                </div>
+
+                <div class="contain-right">
+                    <span>颜色：白色 </span>
+                    <span>尺码：M</span>
+                    <span> 身高：0cm</span>
+                    <span>体重：0.0kg</span>
+                    <span>尺码合适</span>
+                </div>
+
+            </div>
+            <div class="buyerName">
+                <span>客户名字</span>
+            </div>
+            <!-- contain end -->
+            <div class="contain-left">
+                <div>
+                    <span>很好合身，图案也很满意</span>
+
+                    <span class="containTime">2019-09-02</span>
+                </div>
+
+                <div class="contain-right">
+                    <span>颜色：白色 </span>
+                    <span>尺码：M</span>
+                    <span> 身高：0cm</span>
+                    <span>体重：0.0kg</span>
+                    <span>尺码合适</span>
+                </div>
+
+            </div>
+            <div class="buyerName">
+                <span>客户名字</span>
+            </div>
+            <!-- contain end -->
+            <div class="contain-left">
+                <div>
+                    <span>很好合身，图案也很满意</span>
+
+                    <span class="containTime">2019-09-02</span>
+                </div>
+
+                <div class="contain-right">
+                    <span>颜色：白色 </span>
+                    <span>尺码：M</span>
+                    <span> 身高：0cm</span>
+                    <span>体重：0.0kg</span>
+                    <span>尺码合适</span>
+                </div>
+
+            </div>
+            <div class="buyerName">
+                <span>客户名字</span>
+            </div>
+            <!-- contain end -->
+        </div>
+        <!-- evaluate-box end  -->
+        <div class="ask-Outbox" id="ask-OutboxPoint">
+            <div class="ask-box">
+                <h2>最新提问(<span>2</span>)</h2>
+                <div class="askBtn"><span>我要提问</span></div>
+            </div>
+            <div>
+
+                <div class="askLogo">Q</div>
+                <div class="questionBox">请问我....</div>
+                <h5 class="questionRight"><span>2019-09-02</span><a href="#">我要回复(0)</a></h5>
+                <div class="clearfix"></div>
+
+
+                <span class="blank30"></span>
+                <div class="answerLogo">A</div>
+                <div class="answerBox">亲爱的客户您好,.....</div>
+
+
+            </div>
+        </div>
     </div>
-    
+    <!-- ======wrap end ======-->
+    <script src="js/jquery1.12.4.js"></script>
+    <script src="./js/ZRPublic.js"></script>
+    <script src="./js/fangdajing.js"></script>
 </body>
+<script>
+    $(function () {
+
+        $(".thumbnail1").click(function () {
+            $(".thumbnail1").css({
+                "border": "1px solid red","width":"70","height":"70"
+            })
+            $(".thumbnail2").css({
+                "border": "none","width":"72","height":"72"
+            });
+            $("#small").children("img").attr("src", "./images/xiangqing/smallpicWhite.jpg")
+        })
+
+        $(".thumbnail2").click(function () {
+
+            $(".thumbnail2").css({
+                "border": "1px solid red","width":"70","height":"70"
+            })
+            $(".thumbnail1").css({
+                "border": "none","width":"72","height":"72"
+            });
+            $("#small").children("img").attr("src", "./images/xiangqing/smallpicWhite2.jpg")
+            $("#bigImg").attr("src", "./images/xiangqing/bigpicWhite2.jpg");
+
+        })
+    //     var date=new Date()
+    //     var HdDate=new Date("2019-10-30")
+    //    var Daytime=parseInt(difTime( date,HdDate)/60/60/24) ;
+    //     var Htime=parseInt(difTime(date,HdDate)/60/60%24)
+    //     var Mtime=parseInt(difTime(date,HdDate)/60%60)
+      
+    //     console.log(Daytime,Htime,Mtime)
+    //     setInterval(function(){
+    //         var Mtime=Math.floor(difTime(date,HdDate)%60)
+    //         console.log(Mtime)
+    //     },1000)
+      
+
+        function getRTime() {
+        var EndTime = new Date("2019/11/01 00:00:00"); //截止时间
+        var NowTime = new Date();
+        var t = EndTime.getTime() - NowTime.getTime();
+        var d = Math.floor(t / 1000 / 60 / 60 / 24);
+        var h = Math.floor(t / 1000 / 60 / 60 % 24);
+        var m = Math.floor(t / 1000 / 60 % 60);
+        var s = Math.floor(t / 1000 % 60);   
+
+        $(".huodongtimeBox").html(d+"天:"+h+ "时:"+m+"分:"+s+"秒")    
+}
+setInterval(getRTime, 1000);
+    })
+
+    window.onscroll=function(){
+       if(scroll().top>=600) {
+           $(".title-product-hidden").css({"position":"fixed","display":"block","top":0,"width":"100%"})
+       }else{
+        $(".title-product-hidden").css({"position":"fixed","display":"none","top":0,"width":"100%"})
+       }
+         
+    }
+</script>
+
 </html>
