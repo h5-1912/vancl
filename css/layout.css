@@ -1,0 +1,8 @@
+body,html,p,ul,li,ol,dl,dt,dd,form,img,a,h1,h2,h3,h4,h5,h6,i,em,b,strong,table,tr,th,td,span,input{padding: 0;margin: 0;}
+ul li,ol li{list-style: none;}
+a{text-decoration: none;}
+a:hover{color: #333;}
+img{vertical-align: top;border: none;}
+input{cursor: pointer;}
+.clearfix:after{content: "";clear: both;overflow: hidden;height: 0;display: block;visibility: hidden;font-size: 1px;}
+body{font-family: "微软雅黑";font-size: 12px;}
