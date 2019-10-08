@@ -1,10 +1,10 @@
 
  
-var small=document.getElementById("small");
-var mask=document.getElementById("mask");
-var big=document.getElementById("big");
-var bigImg=document.getElementById("bigImg");
-var box=document.getElementById("box");
+var small=document.getElementById("ZRPsmall");
+var mask=document.getElementById("ZRPmask");
+var big=document.getElementById("ZRPbig");
+var bigImg=document.getElementById("ZRPbigImg");
+var box=document.getElementById("ZRPbox");
 
 small.onmouseenter=function(e){
     
@@ -29,13 +29,13 @@ small.onmousemove=function(e){
         l=0;   //让小图可视区最小值不小于小图的边界
      }
      if(l>maxL){
-         l=maxL;
+         l=maxL-2;
      }
      if(t<0){
          t=0;
      }
      if(t>maxT){
-         t=maxT;
+         t=maxT-2;
      }
     
     mask.style.left=l+"px";  //小图可视区的左定位
@@ -57,9 +57,9 @@ box.onmouseleave=function(){
 }
 window.onscroll=function(){
     if(scroll().top>=600) {
-        $(".title-product-hidden").css({"position":"fixed","display":"block","top":0,"width":"100%"})
+        $(".ZRP-title-product-hidden").css({"position":"fixed","display":"block","top":0,"width":"100%"})
     }else{
-     $(".title-product-hidden").css({"position":"fixed","display":"none","top":0,"width":"100%"})
+     $(".ZRP-title-product-hidden").css({"position":"fixed","display":"none","top":0,"width":"100%"})
     }
       
  }
