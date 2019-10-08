@@ -57,7 +57,7 @@
     background: white;
 }
  
-.title-product-hidden>ul>li:nth-child(4)>a{
+.title-product-hidden>ul>li>span>a{
     width:168px;
     height:32px;
     display: block;
@@ -84,9 +84,9 @@
 }
 
 .thumbnail1 {
-    width: 70px;
-    height: 70px;
-    border:1px solid red;
+    width: 68px;
+    height: 68px;
+    border:2px solid #a50000;
     background: url("../images/xiangqing/joinimagesWhite.jpg") no-repeat;
     margin-bottom: 10px;
     margin-top: 34px;
@@ -227,6 +227,7 @@
 
 .checkbox-color-items,
 .checkbox-color li {
+    padding:1px;
     float: left;
     margin-right: 10px;
 }
@@ -238,9 +239,9 @@
 }
 
 .checkbox-color li {
-    width: 95px;
+    width: 90px;
     height: 40px;
-    border: 1px solid #b3b3b3;
+    border: 2px solid #b3b3b3;
 }
 
 .checkbox-color li>img {
@@ -255,7 +256,7 @@
     min-width: 30px;
     height: 25px;
     float: left;
-    border: 1px solid #b3b3b3;
+    border: 2px solid #b3b3b3;
     text-align: center;
     margin-right: 10px;
     line-height: 25px;

@@ -21,12 +21,12 @@
             <li><a href="#mainBoxPoint">产品描述</a></li>
             <li><a href="#evaluate-boxPoint">评论</a></li>
             <li><a href="#ask-OutboxPoint">提问</a></li>
-            <li><a href="#">加入购物车</a></li>
+            <li><span><a href="#">加入购物车</a></span></li>
         </ul>
     </div>
     <div class="wrap">
         <ul class="nav-list">
-            <li><a href="#">首页 &#62</a></li>
+            <li><a href="./index.html">首页 &#62</a></li>
             <li><a href="#">男装&#62</a></li>
             <li><a href="#">T恤&#62</a></li>
             <li><a href="#">短袖T恤&#62</a></li>
@@ -306,13 +306,15 @@
     <script src="./js/fangdajing.js"></script>
 </body>
 <script>
+
+   
     $(function () {
 
         $(".thumbnail1").click(function () {
             $(".thumbnail1").css({
-                "border": "1px solid red",
-                "width": "70",
-                "height": "70"
+                "border": "2px solid #a50000",
+                "width": "68",
+                "height": "68"
             })
             $(".thumbnail2").css({
                 "border": "none",
@@ -336,9 +338,9 @@
         $(".thumbnail2").click(function () {
 
             $(".thumbnail2").css({
-                "border": "1px solid red",
-                "width": "70",
-                "height": "70"
+                "border": "2px solid #a50000",
+                "width": "68",
+                "height": "68"
             })
             $(".thumbnail1").css({
                 "border": "none",
@@ -357,15 +359,15 @@
 
         $(".checkbox-color-white").click(function () {
             $(this).css({
-                "border": "1px solid #c82f2a"
+                "border": "2px solid #a50000"
             }).siblings("li").has("img").css({
-                "border": "1px solid #b3b3b3"
+                "border": "2px solid #b3b3b3"
             })
             $(".checkedVal").html($(".checkbox-color-white").text())
             $(".thumbnail1").css({
-                "border": "1px solid #c82f2a"
+                "border": "2px solid #a50000"
             }).siblings().css({
-                "border": "1px solid #b3b3b3"
+                "border": "none"
             })
             $("#small").children("img").attr("src", "./images/xiangqing/smallpicWhite.jpg");
             $("#bigImg").attr("src", "./images/xiangqing/bigpicWhite.jpg");
@@ -381,15 +383,15 @@
         })
         $(".checkbox-color-black").click(function () {
             $(this).css({
-                "border": "1px solid #c82f2a"
+                "border": "2px solid #a50000"
             }).siblings().has("img").css({
-                "border": "1px solid #b3b3b3"
+                "border": "2px solid #b3b3b3"
             })
             $(".checkedVal").html($(".checkbox-color-black").text());
             $(".thumbnail1").css({
-                "border": "1px solid #c82f2a"
+                "border": "2px solid #a50000"
             }).siblings("li").css({
-                "border": "1px solid #b3b3b3"
+                "border": "2px solid #b3b3b3"
             })
             $("#small").children("img").attr("src", "./images/xiangqing/smallpicBlack.jpg");
             $("#bigImg").attr("src", "./images/xiangqing/bigpicBlack.jpg");
@@ -405,14 +407,19 @@
         //产品尺寸按键;
         $(".productSize").click(function () {
             $(this).css({
-                "border": "1px solid #c82f2a"
+                "border": "2px solid #a50000"
             }).siblings("li").css({
-                "border": "1px solid #b3b3b3"
+                "border": "2px solid #b3b3b3"
             })
             $(".checkedSizeVal").text($(this).text())
         })
 
-
+        $(".title-product-right-hidden").children("li").children("a").click(function(){
+            $(this).css({"color":"#a50000","font-weight":"700"});
+            $(this).parent().siblings("li").children("a").css({
+                "color":"black"
+            })
+        })
         //立即购买按键
         $(".buyNow").click(function () {
             var checkVal = $(".checkedVal").html()
@@ -420,9 +427,18 @@
             var productNum = $(".selectBtn").children().value;
             var productNum = parseInt($(".selectBtn")[0].value);
 
-            // window.location.href="./mycart.html"
-            window.location.href = "./mycart.html?color=" + checkVal + "&size=" + checkedSizeVal +
-                "&num=" + productNum
+           
+            // window.location.href = "./mycart.html?color=" + checkVal + "&size=" + checkedSizeVal +
+            //     "&num=" + productNum
+            var productList = JSON.parse(window.localStorage.getItem("list") || "[]");
+                var product={
+                    color:checkVal,
+                    size:checkedSizeVal,
+                    num: productNum
+                 }
+            productList.push(product);
+            window.localStorage.setItem("list", JSON.stringify(productList))
+            
         })
         //加入购物车按键
         $(".cartBtn").click(function () {
@@ -432,8 +448,16 @@
             var productNum = parseInt($(".selectBtn")[0].value);
 
             // window.location.href="./mycart.html"
-            window.location.href = "./mycart.html?color=" + checkVal + "&size=" + checkedSizeVal +
-                "&num=" + productNum
+            // window.location.href = "./mycart.html?color=" + checkVal + "&size=" + checkedSizeVal +
+            //     "&num=" + productNum
+            var productList = JSON.parse(window.localStorage.getItem("list") || "[]");
+                var product={
+                    color:checkVal,
+                    size:checkedSizeVal,
+                    num: productNum
+                 }
+            productList.push(product);
+            window.localStorage.setItem("list", JSON.stringify(productList))
         })
 
 
@@ -452,6 +476,9 @@
         }
         setInterval(getRTime, 1000);
     })
+
+
+
 </script>
 
 </html>
