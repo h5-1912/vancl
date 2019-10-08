@@ -8,61 +8,67 @@
     width: 1200px;
     margin: 0 auto;
 }
-.top {
+.xtop {
     height: 32px;
     line-height: 32px;
     float: right;
     color: #808080;
 }
-.left {
+.xleft {
     float: left;
 }
-
-.center {
+.xcenter {
     float: left;
     
 }
-.weixin{
+.xweixin{
 position:absolute;
 top:21px;
 left:-116px;
 z-index:2;
 }
-#img{
+#ximg{
     display: none;
 }
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .right {
     position: relative;
     float: left;
 }
 
- img {
+.xcenter img{
     margin-top: 6px;
 }
-a {
-    color: #808080;
+
+.right img {
+    margin-top: 6px;
 }
+ /* a {
+    color: #808080;
+} */
 p{
     font-size: 12px;
 }
-.center a:hover {
+.xcenter a:hover {
     color: #d94646;
 }
-.header-nav {
+.xheader-nav {
     height: 110px;
     overflow: hidden;
 }
-.box {
+.xbox {
     float: right;
 }
-.search {
+.xsearch {
     width: 400px;
     height: 40px;
     float: left;
     box-sizing: border-box;
     margin-top: 34px;
 }
-.seacher {
+.xseacher {
     width: 310px;
     float: left;
     height: 32px;
@@ -74,7 +80,7 @@ p{
     border: none;
     font-size:12px;
 }
-.search a {
+.xsearch a {
     display: block;
     width: 68px;
     height: 34px;
@@ -85,7 +91,7 @@ p{
     border: none;
     background: #d94646;
 }
-.shop {
+.shoping{
     background: url("../images/blouse/vanclsprite.png") no-repeat;
     height: 34px;
     width: 168px;
@@ -93,24 +99,24 @@ p{
     float: left;
     margin-top: 33px;
 }
-.shop>a {
+.shoping>a {
     height: 50px;
     width: 100px;
     position: relative;
 }
-.shop>a>span {
+.shoping>a>span {
     position: absolute;
     width: 200px;
     top: 10px;
     left: 70px;
     color: white;
 }
-.minword{
+.xminword{
     width: 460px;
     height: 20px;
     margin-top:70px;
 }
-.minword ul>li{
+.xminword ul>li{
     float: left;
     text-align: center;
     line-height: 12px;
@@ -118,18 +124,18 @@ p{
     margin-left: 10px;
     font-size: 12px;
 }
-.select-left {
+.xselect-left {
     width: 185px;
     height: 52px;
     float: left;
 }
-.select-right {
+.xselect-right {
     width: 1015px;
     float: left;
     height: 52px;
     font-size: 17px;
 }
-.wrap {
+.xwrap {
     width: 1015px;
     height: 30px;
     margin-top:20px;
@@ -137,17 +143,17 @@ p{
     padding-left: 10px;
   }
   
-  .wrap li {
+  .xwrap li {
     border-right: 1px solid #888888;
   }
   
-  .wrap > ul > li {
+  .xwrap > ul > li {
     float: left;
     width: 100px;
     position: relative;
   }
   
-  .wrap a {
+  .xwrap a {
     display: block;
     height: 30px;
     width: 100px;
@@ -157,7 +163,7 @@ p{
     text-align: center;
   }
   
-  .wrap li ul {
+  .xwrap li ul {
     width: 100px;
     position: absolute;
     top: 30px;
@@ -166,17 +172,17 @@ p{
     display: none;
     z-index: 2;
   }
-  .wrap li ul li{
+  .xwrap li ul li{
     border-right: 0px;
   }
-  .warp-nav{
+  .xwarp-nav{
       float: left;
       width: 120px;
   }
   .slider{
       width: 1200px;
       height: 535px;
-      margin-top:40px;
+      margin-top:20px;
       float: left;
       position: relative;
      background: #d94646;
@@ -201,10 +207,10 @@ p{
     height: 60px;
     background: url(../images/blouse/csrig.png) no-repeat;
 }
-.nav-one img{
+.xnav-one img{
     padding-top: 48px;
 }
-.nav-two img{
+.xnav-two img{
     width: 100%;
     padding-top: 32px;
 
@@ -212,63 +218,71 @@ p{
 .all{
     float: left;
 }
-.pic{
-    height: 456px;
+.xpic{
+    height:542px;
 }
-.pic>ul>li{
+.xpic>ul>li{
     width: 232px;
     height: 420px;
     float: left;
 }
-.pic ul li img{
+.xpic ul li img{
     margin-top: 50px;
 }
-.product{
+.xproduct{
     font-size: 16px;
     color: #474747;
     margin-top: 20px;
 }
-.producty{
+.xproducty{
     font-size: 16px;
     text-decoration: line-through;
     margin-top: 30px;
     color: #d3d3d3;
 }
-.producte{
+.xproducte{
     color: #bb2b34;
     font-size: 16px;
 }
-.CZ{
+.xCZ{
     margin-left: 106px;
 }
-.B{
+.xB{
     
     font-size: 26px;
     color: #bb2b34;
 }
-.strong{
+.xstrong{
     font-size: 26px;
     color: #bb2b34;
 }
-.product1{
+.xproduct1{
     font-size: 16px;
     color: #474747;
     margin-top: 26px;
 }
-.pic ul .out{
+.xpic ul .out{
     height: 420px;
     width: 272px;
 }
-.minder img{
+.xminder img{
     width: 100%;
 }
+.footb{
+    margin-top:5px;
+    width: 100%;
+    height: 80px;
+    border-top: 1px solid black;
+}
 .foot{
-    height: 50px;
+    height: 80px;
     text-align: center;
+    margin-top:10px;
 }
 .bottom{
     width: 980px;
     height: 85px;
+    margin-top:30px;
 }
 .bottom img{
     height: 45px;
@@ -280,13 +294,14 @@ p{
     bottom: 50px;
    
 }
-.tbody{
+.xtbody{
     height: 856px;
 }
 .yifu{
-height: 424px;
+height: 406px;
 width: 268px;
 float: left;
+margin-top: 32px;
 margin-left: 25px;
 }
 .yifus{
@@ -303,32 +318,32 @@ margin-left: 25px;
 .yifus span a{
     color: #ffffff;
 }
-.end{
+.xend{
     height: 284px;
     border: #808080 1px solid;
 }
-.endz{
+.xendz{
     width: 1118px;
     height: 204px;;
     margin-left: 40px;
 }
-.endz ul{
+.xendz ul{
     width: 371px;
     height: 138px;
     float: left;
     margin-top: 10px;
     border-right: 1px solid #e0e0e1;
 }
-.endz ul li{
+.xendz ul li{
     width: 371px;
     height: 70px;
 }
-.endz ul li img{
+.xendz ul li img{
     margin-left: 168px;
     margin-top: 10px;
     float: left;
 }
-.sp{
+.xsp{
     width: 156px;
     height: 32px;
     background: #bb2b34;
@@ -338,7 +353,7 @@ margin-left: 25px;
     font-size: 18px;
     color: #ffffff;
 }
-.zhong p{
+.xzhong p{
     width: 156px;
     height: 32px;
     text-align: center;
@@ -347,7 +362,7 @@ margin-left: 25px;
     font-size: 16px;
     color:#808080;
 }
-.you{
+.xyou{
     width: 156px;
     height: 32px;
     text-align: center;
@@ -357,18 +372,18 @@ margin-left: 25px;
     margin-top: 50px;
     color:#808080;
 }
-.you b{
+.xyou b{
     color:#bb2b34;
 }
-.box ul{
+.xbox ul{
     border: none;
 }
-.boxs{
+.xboxs{
     width: 1118px;
     height: 57px;
     background:#f8f8f8;
 }
-.boxs ul li{
+.xboxs ul li{
     width: 179px;
     height: 26px;
     text-align: center;
@@ -378,23 +393,67 @@ margin-left: 25px;
     float: left;
     border-right: 1px solid #e0e0e1;
 }
-.boxs .lis li{
+.xboxs .lis li{
     border:none;
 }
-.metter{
+.xmetter{
     height: 100px;
     line-height: 150px;
     text-align: center;
     font-size: 16px;
     color: #808080;
 }
-.san{
+.xsan{
     height: 706px;
+    margin-top:56px;
 }
-.san li{
+.xsan li{
     width: 385px;
     height: 275px;
     float: left;
     margin-left: 12px;
     margin-top: 8px
+}
+.xget{
+    height: 582px;
+    margin-top: 20px;
+}
+.xworld h2{
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #9a9a9a;
+}
+.xpants{
+    height: 500px;
+}
+.xpants ul li{
+width: 272px;
+height: 508px;
+}
+.xpants img{
+    width: 100%;
+    height: 80%;
+}
+.niuzai{
+    width: 308px;
+    height: 50px;
+    background: #474747;
+}
+.yifu h3{
+    height: 50px;
+    line-height: 50px;
+border-left: 1px solid #e8e7ec;
+border-right: 1px solid #e8e7ec;
+border-bottom: 1px solid #e8e7ec;
+}
+.yifu h3 span{
+    margin-left: 10px;
+    font-weight: normal;
+    
+}
+.yifu h3 strong{
+    margin-left: 92px;
+    color: #aa0000;
+    font-weight: normal;
 }
