@@ -1,0 +1,563 @@
+body,
+ol,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+th,
+td,
+dl,
+dd,
+form,
+fieldset,
+legend,
+input,
+textarea,
+select {
+    margin: 0;
+    padding: 0
+}
+
+/* 清除序列默认点样式 */
+ul,
+li ol {
+    list-style: none;
+}
+
+/* 清除a标签样式 */
+a {
+    text-decoration: none;
+}
+
+/* 清除加粗标签样式 */
+strong,
+b {
+    font-weight: normal;
+}
+
+/* 清除斜体样式 */
+em,
+i {
+    font-style: normal;
+}
+
+/* 清除标题样式 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+/* 图片状块元素 */
+img {
+    display: block;
+}
+
+/* 顶部 */
+#top {
+    height: 40px;
+    /* background:red; */
+}
+
+.top {
+    height: 40px;
+    width: 1325px;
+    margin: 0 auto;
+    /* background:red; */
+}
+
+/* 返回顶部的小火箭 */
+.gotop {
+    /* width:30px;
+    height:100px; */
+    background: red;
+    position: fixed;
+    right: 50px;
+    bottom: 100px;
+    /* display:none; */
+}
+
+/* 购物车 */
+#cart {
+    height: 90px;
+    /* background:yellow; */
+}
+
+.cart {
+    height: 90px;
+    width: 1325px;
+    margin: 0 auto;
+    /* background:yellow; */
+}
+
+/* 导航栏 */
+#nav {
+    height: 90px;
+    /* background:green; */
+}
+
+.nav {
+    height: 90px;
+    width: 1325px;
+    margin: 0 auto;
+    /* background:green;   */
+}
+
+.nav .logo {
+    width: 220px;
+    height: 80px;
+    /* background:red; */
+    float: left;
+}
+
+.nav ul {
+    width: 1100px;
+    /* height:90px; */
+    /* background:paleturquoise; */
+    float: left;
+    margin-top: 37px;
+}
+
+.nav ul li {
+    width: 108px;
+    height: 25px;
+    /* background:pink; */
+    float: left;
+    text-align: center;
+    border-right: 1px solid black;
+}
+
+.nav ul li a {
+    color: black;
+    font-size: 20px;
+}
+
+.nav ul li a:hover {
+    color: red;
+}
+
+/* 广告 */
+#banner {
+    height: 680px;
+    /* background:blue; */
+}
+
+.banner {
+    height: 680px;
+    width: 1325px;
+    margin: 0 auto;
+    background: blue;
+}
+
+.banner img {
+    height: 100%;
+    width: 100%;
+}
+
+/* 首标题 */
+#title {
+    height: 60px;
+    /* background:black; */
+    margin-top: 20px;
+}
+
+.title {
+    height: 60px;
+    width: 1325px;
+    margin: 0 auto;
+    background: #856a4f;
+    position: relative;
+}
+
+.title p a {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 580px;
+}
+
+.title div a {
+    width: 135px;
+    height: 40px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 1100px;
+    background: white;
+    border-radius: 50px;
+    font-size: 25px;
+    color: #856a4f;
+    text-align: center;
+    line-height: 40px;
+}
+
+/* 首内容 */
+#content {
+    height: 950px;
+    /* background:orange; */
+}
+
+.content {
+    height: 950px;
+    width: 1325px;
+    margin: 0 auto;
+    /* background:orange;   */
+}
+
+.content .box-max {
+    width: 425px;
+    height: 290px;
+    /* background:pink; */
+    padding: 20px 23px 0 0;
+    float: left;
+}
+
+.content .box-max img {
+    width: 425px;
+    height: 290px;
+}
+
+.content .box-max a {
+    width: 425px;
+    height: 60px;
+    margin-top: -60px;
+    color: white;
+    display: block;
+    font-size: 21px;
+    letter-spacing: 4px;
+    padding-left: 139px;
+    padding-top: 16px;
+}
+
+/* 内容 日式免烫衬衫 */
+.content-list {
+    height: 1080px;
+    /* background:orange; */
+}
+
+#content-list .content-list {
+    height: 1080px;
+    width: 1305px;
+    margin: 0 auto;
+    /* background: orange; */
+    /* border: 1px solid black; */
+    padding-left: 20px;
+}
+
+#content-list .content-list ul li {
+    width: 310px;
+    height: 345px;
+    float: left;
+    margin: 10px 10px 0 0;
+    /* background: pink; */
+    position: relative;
+    /* border: 1px solid black; */
+
+}
+
+#content-list .content-list ul li a {
+    color: #676767;
+    width: 320px;
+    height: 30px;
+    display: block;
+    text-align: center;
+}
+
+#content-list .content-list ul li p {
+    color: #b80001;
+    width: 320px;
+    height: 30px;
+    display: block;
+    text-align: center;
+}
+
+/* 添加删除线*/
+#content-list .content-list ul li p span {
+    text-decoration: line-through;
+}
+
+/* 搜索 */
+#search {
+    height: 90px;
+    /* background:purple; */
+}
+
+.search {
+    height: 90px;
+    width: 1325px;
+    margin: 0 auto;
+    /* background:purple;   */
+    padding-top: 10px;
+}
+
+.search .box {
+    height: 50px;
+    width: 470px;
+    margin: 0 auto;
+    /* background:pink;   */
+}
+
+.search .box .input {
+    width: 375px;
+    height: 30px;
+    border: 1px solid #a3a4a3;
+    border-radius: 8px 0 0 8px;
+    float: left;
+}
+
+.search .box .input input {
+    border: none;
+    width: 375px;
+    height: 30px;
+    border-radius: 8px 0 0 8px;
+    display: block;
+    float: left;
+}
+
+.search .box .se {
+    width: 80px;
+    height: 32px;
+    background: #ae030a;
+    float: left;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    border-radius: 0 8px 8px 0;
+}
+
+.search .box span {
+    color: red;
+}
+
+.search .box .sez {
+    color: black;
+}
+
+/* 服务 */
+#service {
+    height: 310px;
+}
+
+.service {
+    height: 310px;
+    width: 1245px;
+    margin: 0 auto;
+    /* background: yellow; */
+    padding: 50px 40px 0;
+    border: 1px solid #e0e0e1;
+}
+
+.service .left {
+    width: 410px;
+    height: 150px;
+    /* background: pink; */
+    float: left;
+}
+
+.service .left .bb {
+    margin-top: 30px;
+    margin-left: 180px;
+    margin-bottom: 20px;
+}
+
+.service .left .bt {
+    display: block;
+    width: 170px;
+    height: 40px;
+    background: #b81c22;
+    margin: auto;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+}
+
+.service .center {
+    width: 410px;
+    height: 150px;
+    /* background: pink; */
+    float: left;
+}
+
+.service .center .bb {
+    margin-top: 30px;
+    margin-left: 180px;
+    margin-bottom: 20px;
+}
+
+.service .center .cc {
+    width: 110px;
+    height: 20px;
+    margin: 0 auto;
+
+}
+
+.service .center .cc a {
+    color: black;
+}
+
+.service .center .dd {
+    width: 150px;
+    height: 20px;
+    margin: 0 auto;
+
+}
+
+.service .center .dd a {
+    color: black;
+}
+
+.service .right {
+    width: 410px;
+    height: 150px;
+    /* background: pink; */
+    float: left;
+}
+
+.service .right .rr {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.service .right .rr img {
+    width: 100%;
+    height: 100%;
+}
+
+.service .right a {
+    width: 150px;
+    height: 22px;
+    display: block;
+    margin: 0 auto;
+    color: black;
+    margin-top: 10px;
+}
+
+.service .bot {
+    width: 1230px;
+    height: 60px;
+    background-color: #f8f8f8;
+    float: left;
+
+}
+
+.service .bot ul {
+    width: 1150px;
+    height: 30px;
+    margin: 0 auto;
+}
+
+.service .bot li {
+    float: left;
+    width: 190px;
+    height: 30px;
+    font-size: 14px;
+    text-align: center;
+    border-left: 1px #dadadb solid;
+    margin-top: 20px;
+}
+
+.service .bot li a {
+    color: black;
+}
+
+/* 底部 */
+#bottom {
+    height: 180px;
+    /* background:red; */
+}
+
+.bottom {
+    height: 180px;
+    width: 1325px;
+    margin: 0 auto;
+    /* background: red; */
+}
+
+/* 放大镜 */
+#small {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    /* border: 1px solid black; */
+    margin: 10px auto;
+}
+
+#mask {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.3;
+    cursor: move;
+    display: none;
+}
+
+#big {
+    width: 360px;
+    height: 440px;
+    background: #e6eaf3;
+    overflow: hidden;
+    position: absolute;
+    z-index: 100;
+    top: -50px;
+    left: 330px;
+    padding: 20px;
+    display: none;
+}
+
+#imgBox {
+    width: 360px;
+    height: 360px;
+    /* border: 1px solid black; */
+    margin-bottom: 6px;
+    overflow: hidden;
+}
+
+#bigImg {
+    /* position: absolute; */
+    left: 0;
+    top: 0;
+}
+
+#big q1 {
+    color: #333333;
+    font-size: 20px;
+    font-weight: bolder;
+
+
+}
+
+#big q2 {
+    color: #999999;
+    font-size: 16px;
+    /* font-weight: bolder; */
+
+}
+
+#big q3 {
+    color: #a10000;
+    font-size: 16px;
+    font-weight: bolder;
+
+
+}
+
+#big q4 {
+    color: #a10000;
+    font-size: 30px;
+    font-weight: bolder;
+    display: block;
+    float: right;
+    margin-right: 20px;
+}
