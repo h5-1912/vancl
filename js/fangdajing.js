@@ -40,7 +40,7 @@ small.onmousemove=function(e){
     
     mask.style.left=l+"px";  //小图可视区的左定位
     mask.style.top=t+"px";
-    document.getElementById('show').innerHTML="left:"+mask.style.left+",top:"+t;
+    
     var smallL =small.clientWidth-mask.clientWidth; 	
     var bigL =bigImg.clientWidth-big.clientWidth;       
     var smallT=	small.clientHeight-mask.clientHeight;
