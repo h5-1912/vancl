@@ -116,7 +116,7 @@
 
                 <span class="checkbox-color-items ">已选:</span>
                 <span class="checkedVal">白色</span>
-                <span class="checkedSizeVal"></span>
+                <span class="checkedSizeVal">XS</span>
                 <span class="colorRed">现在有货</span>
                 <div class="clearfix"></div>
                 <!-- <form method="get" > -->
@@ -438,7 +438,7 @@
                  }
             productList.push(product);
             window.localStorage.setItem("list", JSON.stringify(productList))
-            
+            window.location.href="./mycart.html"
         })
         //加入购物车按键
         $(".cartBtn").click(function () {
@@ -447,17 +447,18 @@
             var productNum = $(".selectBtn").children().value;
             var productNum = parseInt($(".selectBtn")[0].value);
 
-            // window.location.href="./mycart.html"
             // window.location.href = "./mycart.html?color=" + checkVal + "&size=" + checkedSizeVal +
             //     "&num=" + productNum
             var productList = JSON.parse(window.localStorage.getItem("list") || "[]");
-                var product={
-                    color:checkVal,
-                    size:checkedSizeVal,
-                    num: productNum
-                 }
+            var product={
+                color:checkVal,
+                size:checkedSizeVal,
+                num: productNum
+            }
             productList.push(product);
             window.localStorage.setItem("list", JSON.stringify(productList))
+            window.location.href="./mycart.html"
+            console.log(productList)
         })
 
 

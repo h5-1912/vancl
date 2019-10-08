@@ -243,6 +243,9 @@
     height: 40px;
     border: 2px solid #b3b3b3;
 }
+.checkbox-color .checkbox-color-white{
+    border: 2px solid #a50000;
+}
 
 .checkbox-color li>img {
     height: 40px;
@@ -261,6 +264,9 @@
     margin-right: 10px;
     line-height: 25px;
     margin-bottom: 20px;
+}
+.checkbox-size>li:nth-child(2){
+    border: 2px solid #a50000;
 }
 
 .selectBtn {
