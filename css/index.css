@@ -199,6 +199,10 @@ p{
     bottom: 50px;
    
 }
+.fixed img{
+    width:70px;
+    height:270px;
+}
 .xend{
     margin-top:50px;
 }
