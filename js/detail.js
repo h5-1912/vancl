@@ -37,7 +37,7 @@ small.onmousemove = function (e) {
     bigImg.style.left = -(l / smallL) * bigL + "px";
     bigImg.style.top = -(t / smallT) * bigT + "px";
 }
-box.onmouseleave = function () {
+small.onmouseleave = function () {
     mask.style.display = "none";
     big.style.display = "none";
     bigImg.style.zIndex = null;
@@ -238,7 +238,7 @@ window.onscroll = function () {
     // $(".radio-box").children("div:has(img)").click(function(){
     //     $(this).css({"width":"100px"})
     // })
-    var containPICBoxChildren= $(".containPICBox").children("div").children("div ").children("div:has(img)").children("img")
+    var containPICBoxChildren= $(".containPICBox").children("div").children("div ").children("div:has(img)").children("img");
     var flag=true;
     $(containPICBoxChildren).click(function(){
         if(flag){
