@@ -91,6 +91,24 @@ p{
     border: none;
     background: #d94646;
 }
+element.style {
+    display: block;
+    width: 25px;
+    height: 13px;
+    background: url(http://i3.vanclimg.com/cms/20170329/icon_hot.png) no-repeat scroll;
+    position: absolute;
+    left: 67px;
+    top: -5px;
+}
+element.style {
+    display: block;
+    width: 25px;
+    height: 13px;
+    background: url(http://i5.vanclimg.com/cms/20170308/new_0308.png) no-repeat scroll;
+    position: absolute;
+    left: 62px;
+    top: -5px;
+}
 .shoping{
     background: url("../images/blouse/vanclsprite.png") no-repeat;
     height: 34px;
@@ -123,6 +141,9 @@ p{
     color: #727171;
     margin-left: 10px;
     font-size: 12px;
+}
+.xminword ul>li>a{
+    color: #727171;
 }
 .xselect-left {
     width: 185px;
@@ -168,7 +189,7 @@ p{
     position: absolute;
     top: 30px;
     background:#ffffff;
-    border-top: 5px solid red;
+    border-top: 5px solid #a50000;
     display: none;
     z-index: 2;
   }
@@ -178,6 +199,9 @@ p{
   .xwarp-nav{
       float: left;
       width: 120px;
+  }
+  .xselect-right a:hover{
+      color: #d90009;
   }
   .slider{
       width: 1200px;
