@@ -8,9 +8,9 @@ gulp.task('js',function(done){
 	.pipe(loader.babel({
 		'presets':['@babel/env']
 	}))
-	.pipe(loader.concat('bundle.js'))
+	// .pipe(loader.concat('bundle.js'))
 	.pipe(loader.uglify())
-	.pipe(loader.rename('bundle.min.js'))
+	// .pipe(loader.rename('bundle.min.js'))
 	.pipe(gulp.dest('./dist/js/'))
 	done()
 })
@@ -42,17 +42,22 @@ gulp.task('img',function(done){
 	.pipe(gulp.dest('./dist/images/'))
 	done()
 })
+gulp.task('php',function(done){
+	gulp.src('./php/*.php')
+	.pipe(gulp.dest('./dist/php/'))
+	done()
+})
 //合并前面的任务,并刷新页面
-gulp.task('minify',gulp.series(gulp.parallel('js','html','css'),function(done){
+gulp.task('minify',gulp.series(gulp.parallel('js','html','css','php'),function(done){
 	//刷新页面
 	browser.reload()
 	done()
 }))
 //开启web服务器
-gulp.task('default',gulp.series(gulp.parallel('js','html','css','img'),function(done){
+gulp.task('default',gulp.series(gulp.parallel('js','html','css','img','php'),function(done){
 	browser.init({
 		server:'./dist/',
-		port:80
+		port:8080
 	})
 	gulp.watch('./*.html',gulp.series('minify'))
 	gulp.watch('./css',gulp.series('minify'))

@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>凡客诚品 - 会员登录</title>
     <link rel="stylesheet" href="css/login.css">
-    <script src="js/login.js"></script>
+
 </head>
 
 <body>
@@ -58,13 +58,19 @@
 
             <div class="shows">
                 <div class="userinfo">
-                    <input type="text" placeholder="请输入用户名">
+                    <input type="text" placeholder="请输入用户名" id="username" name="un">
+                    <div class="wwc-msg-block">
+                        <span class="error-z"></span>
+                    </div>
                     <span class="blank10" style="float: left;"></span>
-                    <input type="password" placeholder="请输入密码">
+                    <input type="password" placeholder="请输入密码" id="password" name="pw">
+                    <div class="wwc-msg-block" >
+                            <span class="error-m"></span>
+                        </div>
                     <span>
                         <a href="#">找回密码</a>
                     </span>
-                    <input type="button" value="登录">
+                    <input type="submit" value="登录" id="submit">
                 </div>
                 <div class="lines">
                     <!--虚线div-->
@@ -107,7 +113,9 @@
     </div>
     <!--底部 结束-->
 
-
+    <script src="./js/baseCookie.js"></script>
+    <script src="./js/jquery-1.8.3.min.js"></script>
+    <script src="./js/login.js"></script>
 </body>
 
 </html>
