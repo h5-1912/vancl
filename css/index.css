@@ -1,0 +1,267 @@
+.header {
+    width: 100%;
+    height: 32px;
+    background: #e8eaed;
+    border-bottom: 1px solid #b6b4b6;
+}
+.main {
+    width: 1200px;
+    margin: 0 auto;
+}
+.xtop {
+    height: 32px;
+    line-height: 32px;
+    float: right;
+    color: #808080;
+}
+.xleft {
+    float: left;
+}
+.xcenter {
+    float: left;
+    
+}
+.xweixin{
+position:absolute;
+top:21px;
+left:-116px;
+z-index:2;
+}
+#ximg{
+    display: none;
+}
+.right {
+    position: relative;
+    float: left;
+}
+.xcenter img{
+    margin-top: 6px;
+}
+
+.right img {
+    margin-top: 6px;
+}
+ a {
+    color: #808080;
+}
+p{
+    font-size: 12px;
+}
+.xcenter a:hover {
+    color: #d94646;
+}
+.xheader-nav {
+    height: 110px;
+    overflow: hidden;
+}
+.xbox {
+    float: right;
+}
+.xsearch {
+    width: 400px;
+    height: 40px;
+    float: left;
+    box-sizing: border-box;
+    margin-top: 34px;
+}
+.xseacher {
+    width: 310px;
+    float: left;
+    height: 32px;
+    border: 1px solid rgb(0, 0, 0);
+}
+.inp {
+    width: 310px;
+    height: 32px;
+    border: none;
+    font-size:12px;
+}
+.xsearch a {
+    display: block;
+    width: 68px;
+    height: 34px;
+    line-height: 32px;
+    text-align: center;
+    float: left;
+    color: white;
+    border: none;
+    background: #d94646;
+}
+.shoping{
+    background: url("../images/blouse/vanclsprite.png") no-repeat;
+    height: 34px;
+    width: 168px;
+    margin-left: 22px;
+    float: left;
+    margin-top: 33px;
+}
+.shoping>a {
+    height: 50px;
+    width: 100px;
+    position: relative;
+}
+.shoping>a>span {
+    position: absolute;
+    width: 200px;
+    top: 10px;
+    left: 70px;
+    color: white;
+}
+.xminword{
+    width: 460px;
+    height: 20px;
+    margin-top:70px;
+}
+.xminword ul>li{
+    float: left;
+    text-align: center;
+    line-height: 12px;
+    color: #727171;
+    margin-left: 10px;
+    font-size: 12px;
+}
+.xselect-left {
+    width: 185px;
+    height: 52px;
+    float: left;
+}
+.xselect-right {
+    width: 1015px;
+    float: left;
+    height: 52px;
+    font-size: 17px;
+}
+.xwrap {
+    width: 1015px;
+    height: 30px;
+    margin-top:20px;
+    
+    padding-left: 10px;
+  }
+  
+  .xwrap li {
+    border-right: 1px solid #888888;
+  }
+  
+  .xwrap > ul > li {
+    float: left;
+    width: 100px;
+    position: relative;
+  }
+  
+  .xwrap a {
+    display: block;
+    height: 30px;
+    width: 100px;
+    text-decoration: none;
+    color: #727171;
+    line-height: 30px;
+    text-align: center;
+  }
+  
+  .xwrap li ul {
+    width: 100px;
+    position: absolute;
+    top: 30px;
+    background:#ffffff;
+    border-top: 5px solid red;
+    display: none;
+    z-index: 2;
+  }
+.xpic ul .out{
+    height: 420px;
+    width: 272px;
+}
+.xminder img{
+    width: 100%;
+}
+.footb{
+    margin-top:5px;
+    width: 100%;
+    height: 80px;
+    border-top: 1px solid black;
+}
+.foot{
+    height: 80px;
+    text-align: center;
+    margin-top:10px;
+}
+.bottom{
+    width: 980px;
+    height: 85px;
+    margin-top:30px;
+}
+.bottom img{
+    height: 45px;
+    margin-left: 48px;
+}
+.fixed{
+    position: fixed;
+    right: 10px;
+    bottom: 50px;
+   
+}
+.xendz{
+    margin-top: 300px;
+    width: 1118px;
+    height: 204px;;
+    margin-left: 40px;
+}
+.xendz ul{
+    width: 371px;
+    height: 138px;
+    float: left;
+    margin-top: 10px;
+    border-right: 1px solid #e0e0e1;
+}
+.xendz ul li{
+    width: 371px;
+    height: 70px;
+}
+.xendz ul li img{
+    margin-left: 168px;
+    margin-top: 10px;
+    float: left;
+}
+.xsp{
+    width: 156px;
+    height: 32px;
+    background: #bb2b34;
+    text-align: center;
+    line-height: 32px;
+    margin-left: 122px;
+    font-size: 18px;
+    color: #ffffff;
+}
+.xzhong p{
+    width: 156px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    margin-left: 112px;
+    font-size: 16px;
+    color:#808080;
+}
+.xyou{
+    width: 156px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    margin-left: 156px;
+    font-size: 16px;
+    margin-top: 50px;
+    color:#808080;
+}
+.xyou b{
+    color:#bb2b34;
+}
+.xboxs ul li{
+    width: 179px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    margin-top: 16px;
+    margin-left: 6px;
+    float: left;
+    border-right: 1px solid #e0e0e1;
+}
