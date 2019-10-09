@@ -483,7 +483,7 @@ img {
 }
 
 /* 放大镜 */
-#small {
+.small {
     position: relative;
     width: 260px;
     height: 260px;
@@ -491,7 +491,7 @@ img {
     margin: 10px auto;
 }
 
-#mask {
+.mask {
     width: 100px;
     height: 100px;
     background: red;
@@ -503,7 +503,7 @@ img {
     display: none;
 }
 
-#big {
+.big {
     width: 360px;
     height: 440px;
     background: #e6eaf3;
@@ -516,7 +516,7 @@ img {
     display: none;
 }
 
-#imgBox {
+.imgBox {
     width: 360px;
     height: 360px;
     /* border: 1px solid black; */
@@ -524,13 +524,13 @@ img {
     overflow: hidden;
 }
 
-#bigImg {
+.bigImg {
     /* position: absolute; */
     left: 0;
     top: 0;
 }
 
-#big q1 {
+.big q1 {
     color: #333333;
     font-size: 20px;
     font-weight: bolder;
@@ -538,14 +538,14 @@ img {
 
 }
 
-#big q2 {
+.big q2 {
     color: #999999;
     font-size: 16px;
     /* font-weight: bolder; */
 
 }
 
-#big q3 {
+.big q3 {
     color: #a10000;
     font-size: 16px;
     font-weight: bolder;
@@ -553,7 +553,7 @@ img {
 
 }
 
-#big q4 {
+.big q4 {
     color: #a10000;
     font-size: 30px;
     font-weight: bolder;

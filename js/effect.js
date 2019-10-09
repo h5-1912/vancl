@@ -4,11 +4,10 @@ $(function () {
     //page=2 5~9
     //page=3 10~14
     var page = 0;
-    $(window).on('scroll', function () {
-        
+    $(window).on('mouseenter', function () {
         page++;
-        var start = 11 * (page - 1);
-        var end = 11 * page - 1;
+        var start = 5 * (page - 1);
+        var end = 5 * page - 1;
         $("img").each(function (index, val) {
             if ((index >= start) && (index <= end)) {
                 $(val).attr("src", $(val).attr("data-src")).removeAttr('data-src')
@@ -20,17 +19,14 @@ $(function () {
 
 
 // 特效2:放大镜(Magnifier)
-var small = $id("small");
-var mask = $id("mask");
-var big = $id("big");
-var imgBox = $id("imgBox");
-var bigImg = $id("bigImg");
-small.onmouseenter = function () {
-    big.style.display = "block";
-}
-small.onmouseleave = function () {
-    big.style.display = "none";
-}
+var small = $('.small'); 
+var big = $('.big'); 
+small.on("mouseenter", function () {
+    $(this).siblings('.big').css('display', 'block')
+})
+small.on('mouseleave', function () {
+    $(this).siblings('.big').css('display', 'none')
+})
 
 // 特效1:小火箭(rocket)
 //获取相关元素
