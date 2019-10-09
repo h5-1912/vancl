@@ -66,8 +66,10 @@ p{
     float: left;
     height: 32px;
     border: 1px solid rgb(0, 0, 0);
+
 }
 .inp {
+    padding-left: 10px;
     width: 310px;
     height: 32px;
     border: none;
@@ -160,7 +162,7 @@ p{
     position: absolute;
     top: 30px;
     background:#ffffff;
-    border-top: 5px solid red;
+    border-top: 5px solid #a50000;
     display: none;
     z-index: 2;
   }
