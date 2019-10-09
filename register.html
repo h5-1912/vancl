@@ -110,7 +110,7 @@
             width: 136px;
             height: 40px;
             margin-left: 6px;
-            margin-top: 20px;
+            margin-top: 30px;
             line-height: 40px;
             text-align: center;
             vertical-align: middle;
@@ -119,16 +119,41 @@
 
         .xinpul {
             float: left;
-            margin-top: 20px;
+            margin-top: 30px;
             line-height: 45px;
             color: #e7dbd9;
             width: 262px;
             height: 45px;
+            position:relative;
         }
+        .LCpass{
+            display: none;
+            font-size:10px;
+            position:absolute;
+           top:43px;
+           left:10px;
+           height:20px;
+           margin:5px 0 5px 0;
+           line-height:20px;
+            color:#000;
+            border:1px solid #999;
 
+        }
+        .phonepass{
+            display: none;
+            font-size:10px;
+            position:absolute;
+           top:43px;
+           left:10px;
+           height:20px;
+           margin:5px 0 5px 0;
+           line-height:20px;
+            color:#000;
+            border:1px solid #999;
+        }
         .xinpur {
             float: left;
-            margin-top: 20px;
+            margin-top: 30px;
             width: 145px;
             line-height: 44px;
             font-size: 12px;
@@ -185,6 +210,23 @@
         .regbetri a:hover {
             text-decoration: underline;
         }
+        .foot {
+            height: 22px;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .bottom {
+            width: 980px;
+            height: 85px;
+            margin-top: 30px;
+        }
+
+        .bottom img {
+            height: 45px;
+            margin-left: 48px;
+        }
+
     </style>
 </head>
 
@@ -201,11 +243,11 @@
         </div>
         <div class="cotent-ri">
             <div class="daha">
-                <span>注册新用户<b>我已经注册，现在就<a href="">登录</a></b></span>
+                <span>注册新用户<b>我已经注册，现在就<a href="./login.html">登录</a></b></span>
             </div>
             <div class="xzhuce">
                 <!-- <input type="text" class="inputlf" placeholder="请输入验证码"> -->
-            <div class="xinpul"><input type="text" placeholder="请输入验证码" style="width:260px; height:42px;"></div>
+            <div class="xinpul"><input type="text" placeholder="请输入验证码" style="width:260px; height:42px;"><span class="LCpass">验证通过</span></div>
 
                 <!-- <input type="text" class="code" id="inputri" value="39sqT"> -->
 
@@ -213,11 +255,11 @@
                     <div class="code" id="data_code"></div>
                 </div>
             </div>
-            <div class="xinpul"><input type="text" placeholder="请输入手机号码" style="width:260px; height:42px;"></div>
+            <div class="xinpul"><input type="text" placeholder="请输入手机号码" style="width:260px; height:42px;"><span class="phonepass">请输入有效的手机号</span></div>
             <div class="xinpur"><a href="">请输入验证码</a></div>
             <div class="xinpul"><input type="text" placeholder="填写手机验证码" style="width:415px; height:42px;"></div>
-            <div class="xinpul"><input type="text" placeholder="设定登录密码" style="width:415px; height:42px;"></div>
-            <div class="xinpul"><input type="text" placeholder="再次输入密码" style="width:415px; height:42px;"></div>
+            <div class="xinpul"><input type="password" placeholder="设定登录密码" style="width:415px; height:42px;"></div>
+            <div class="xinpul"><input type="password" placeholder="再次输入密码" style="width:415px; height:42px;"></div>
             <div class="regbet">
                 <div class="regbetlf">
                     <span>
@@ -233,8 +275,47 @@
         </div>
     </div>
 
+    <div class="footb">
+        <div class="foot main">
+            <p> Copyright 2007 - 2019 [图片]vancl.com All Rights Reserved 京ICP证100557号 京公网安备11011502002400号 出版物经营许可证新出发京批字第直110138号</p><br />
+        </div>
+    </div>
+    <div class="bottom main">
+        <a href=""><img src="./images/index/t1.jpg" alt=""></a>
+        <a href=""><img src="./images/index/t2.jpg" alt=""></a>
+        <a href=""><img src="./images/index/t3.jpg" alt=""></a>
+        <a href=""><img src="./images/index/t4.jpg" alt=""></a>
+        <a href=""><img src="./images/index/t5.jpg" alt=""></a>
+        <a href=""><img src="./images/index/t6.jpg" alt=""></a>
+    </div>
     <script src="./js/jquery1.12.4.min.js"></script>
     <script>
+
+       
+      $(".xinpul:nth-child(1)").change(function(){
+        
+      if($(".xinpul:nth-child(1)").children().val().toLowerCase()==$("#data_code").html().toLowerCase()){
+         
+        $(".LCpass").css({"display":"none"})
+      }else{
+        $(".LCpass").css({"display":"block"})
+      }
+      })
+      var phoneReg=/^1[3-9]\d{9}$/;
+      var passwordReg=/^[\w_-]{6,16}$/;
+    
+      
+     
+      $(".xinpul:nth-child(3)").change(function(){
+        var aa= $(".xinpul:nth-child(3)").children().val();
+         
+        if(phoneReg.test(aa)){
+            $(".phonepass").css({"display":"none"})
+        }else(
+            $(".phonepass").css({"display":"block"})
+        )
+
+      })
         $.fn.code_Obj = function (o) {
             var _this = $(this);
             var options = {
@@ -256,7 +337,7 @@
                         var charNum = Math.floor(Math.random() * 12);
                         codeColor = this.codeColors[charNum];
                     }
-                    console.log(code);
+                    // console.log(code);
                     if (checkCode) {
                         checkCode.css('color', codeColor);
                         checkCode.className = "code";
