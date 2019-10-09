@@ -1,6 +1,6 @@
 <?php
 header("Content-Type:text/html;charset=UTF-8");
-include "php/conn.php";
+include "./conn.php";
 $act = $_GET['act'];
 $user = strtolower($_GET['user']);
 $pass = $_GET['pass'];

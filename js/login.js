@@ -9,26 +9,26 @@ $(function(){
         var pas = /^[\da-zA-z]{6,12}$/; //判断密码格式 6-12位
         var info = true;
        //判断手机号不能为空
-    //    if($.trim(user)==''){  
-    //         $('.error-z').html('请输入有效的邮箱或手机号码')
-    //         $('#username').css('border','1px solid red')
+       if($.trim(user)==''){  
+            $('.error-z').html('请输入有效的邮箱或手机号码')
+            $('#username').css('border','1px solid red')
 
-    //         $('#username').keyup(function(){
-    //             $('#username').css('border','1px solid #cccccc')
-    //             $('.error-z').html('');
-    //         })
-    //         info = false;
-    //     }else if(!reg.test(userl)){
-    //         $('.error-z').html('请输入有效的邮箱或手机号码')
-    //         $('#username').css('border','1px solid red')
+            $('#username').keyup(function(){
+                $('#username').css('border','1px solid #cccccc')
+                $('.error-z').html('');
+            })
+            info = false;
+        }else if(!reg.test(userl)){
+            $('.error-z').html('请输入有效的邮箱或手机号码')
+            $('#username').css('border','1px solid red')
 
-    //         $('#username').keyup(function(){
-    //             $('#username').css('border','1px solid #cccccc')
-    //             $('.error-z').html('');
-    //         })
-    //         info = false;
-    //     }
-        //判断密码不能为空
+            $('#username').keyup(function(){
+                $('#username').css('border','1px solid #cccccc')
+                $('.error-z').html('');
+            })
+            info = false;
+        }
+        // 判断密码不能为空
         if($.trim(pass)==''){
             $('.error-m').html('请输入你的密码');
             $('#password').css('border','1px solid red');
@@ -49,7 +49,7 @@ $(function(){
          if(info){
             $.ajax({
                 type: 'get',
-                url: 'http://localhost:80/php/login.php',
+                url: 'http://localhost/php/login.php',
                 data:'act=login&user='+user+'&pass='+pass,
                 dataType: 'json',
                 cache: false,//不使用缓存
