@@ -231,9 +231,25 @@ window.onscroll = function () {
         console.log(productList)
     })
     //获取所有评论的数量
-    $(".radio-box").children().children("span").html($(".evaluate-box").children().size()-1);
+    $(".radio-box").children("h2").children("span").html($(".evaluate-box").children().size()-1);
      //获取图片评论的数量
     $(".radio-box").children("span").html($(".evaluate-box").children("div:has(img)").size());
+    //评论图片放大事件
+    // $(".radio-box").children("div:has(img)").click(function(){
+    //     $(this).css({"width":"100px"})
+    // })
+    var containPICBoxChildren= $(".containPICBox").children("div").children("div ").children("div:has(img)").children("img")
+    var flag=true;
+    $(containPICBoxChildren).click(function(){
+        if(flag){
+            $(this).css({"width":"400px","height":"400px","position":"absolute"})
+            flag=!flag
+        }else{
+            $(this).css({"width":"60px","height":"60px","position":"static"});
+            flag=!flag
+        }
+    })
+    
     //买家评论含图片的选择框
     $("#picBtn").click(function () {
         $(".containBox").css({
