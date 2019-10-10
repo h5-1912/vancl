@@ -318,6 +318,10 @@ element.style {
     bottom: 50px;
    
 }
+.fixed img{
+    width: 70px;
+    height: 282px;
+}
 .xtbody{
     height: 856px;
 }
@@ -480,4 +484,126 @@ border-bottom: 1px solid #e8e7ec;
     margin-left: 92px;
     color: #aa0000;
     font-weight: normal;
+}
+.xxing{
+    height:582px;
+}
+.xxingzhuang{
+    height: 526px;
+}
+.xxing h2 {
+    text-align: center;
+    line-height: 50px;
+    margin: 30px 0px;
+    font-family: "Microsoft YaHei";
+    color: #9a9a9a;
+    font-size: 18px;
+}
+.xxing ul{
+    float: left;
+}
+.xtuij{
+    float: left;
+    height: 55px;
+    line-height: 50px;
+    width: 588px;
+   
+    border-top:none;
+}
+.xtuij span{
+    margin-left: 15px;
+    font-size: 14px;
+
+}
+.xtuijs{
+    width: 588px;
+    border: 1px solid #e8e7ec;
+}
+.xtuij span b{
+    font-size: 14px;
+    float:right;
+    font-weight: normal;
+    margin-right: 15px;
+    color: #a50000;
+}
+.xtuimin{
+    float: left;
+    margin-left: 28px;
+    width: 290px;
+    height: 180px;
+    background: #474747
+}
+.xtuimin span{
+    margin-left: 15px;
+    font-size: 14px;
+    line-height: 45px;
+
+}
+.xtuimin span b{
+    font-size: 14px;
+    float:right;
+    font-weight: normal;
+    margin-right: 15px;
+    color: #a50000;
+}
+.xtuimins{
+    height: 55px;
+    border: 1px solid #e8e7ec;
+    border-top: none;
+}
+.xtuix{
+    float: left;
+    margin-left: 4px;
+    width: 290px;
+    height: 180px;
+    background: #474747;
+    margin-top: 20px;
+}
+.xtuixs{
+    float: left;
+    height: 55px;
+    width: 288px;
+    border: 1px solid #e8e7ec;
+    border-top: none;
+}
+.xtuiri{
+    width: 274px;
+    height: 400px;
+    background: #474747;
+    float: left;
+    margin-left: 20px;
+}
+.xtuiris{
+    height: 50px;
+    width: 282px;
+    border: 1px solid #e8e7ec;
+    border-top: none;  
+}
+.xtuiris span{
+    margin-left: 15px;
+    font-size: 14px;
+    line-height: 45px;
+}
+.xtuiris span b{
+    font-size: 14px;
+    float:right;
+    font-weight: normal;
+    margin-right: 15px;
+    color: #a50000;
+}
+.xboxes{
+    height: 580px;
+    background:white;
+}
+.xboxes img{
+    border:none;
+    margin-left: 5px;
+}
+.xpeople{
+    height: 580px;
+    background: white;
+}
+.xpeople img{
+    border:none;
+    margin-left: 5px;
 }
