@@ -1,3 +1,31 @@
+//下拉列表
+window.onload = function () {
+    $(function () {
+        var $li = $(".xwrap>ul>li");
+        $li.mouseenter(function () {
+            $(this).children("ul").stop().slideDown();
+        });
+
+        $li.mouseleave(function () {
+            $(this).children("ul").stop().slideUp();
+        });
+    });
+}
+var wei = document.getElementById('wei');
+var img = document.getElementById("ximg");
+wei.onmouseenter = function () {
+
+    img.style.display = "block";
+}
+wei.onmouseleave = function () {
+    img.style.display = "none";
+}
+
+var slider = $('slider');
+var prev = $('prev');
+var next = $('next');
+
+
 // 特效3: 懒加载
 $(function () {
     //page=1 0~4
