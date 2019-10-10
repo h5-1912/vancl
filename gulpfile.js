@@ -57,10 +57,11 @@ gulp.task('minify',gulp.series(gulp.parallel('js','html','css','php'),function(d
 gulp.task('default',gulp.series(gulp.parallel('js','html','css','img','php'),function(done){
 	browser.init({
 		server:'./dist/',
-		port:8080
+		port:80
 	})
 	gulp.watch('./*.html',gulp.series('minify'))
 	gulp.watch('./css',gulp.series('minify'))
 	gulp.watch('./js',gulp.series('minify'))
+	gulp.watch('./php',gulp.series('minify'))
 	done()
 }))

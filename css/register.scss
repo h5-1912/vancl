@@ -1,0 +1,193 @@
+.main {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    height: 59px;
+    border-bottom: solid 1px #919191;
+  }
+  
+  .content {
+    height: 547px;
+    margin-top: 50px;
+  }
+  
+  .cotent-lf {
+    float: left;
+    width: 465px;
+    height: 500px;
+    margin: 0 0 0 130px;
+  
+    img {
+      width: 400px;
+      height: 252px;
+      float: right;
+      margin-top: 100px;
+    }
+  }
+  
+  .cotent-ri {
+    float: left;
+    width: 415px;
+    height: 423px;
+    float: right;
+    margin: 10px 95px 0 0;
+  }
+  
+  .daha {
+    width: 415px;
+    height: 37px;
+    border-bottom: 3px solid #a50000;
+  
+    span {
+      line-height: 42px;
+      font-size: 20px;
+      color: #808080;
+  
+      b {
+        font-weight: normal;
+        font-size: 16px;
+        color: #808080;
+        float: right;
+  
+        a {
+          color: #a50000;
+          text-decoration: none;
+  
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  
+  .xzhuce {
+    margin-top: 30px;
+    width: 415px;
+    height: 45px;
+  }
+  
+  .inputlf {
+    float: left;
+    width: 260px;
+    height: 42px;
+    color: #e7dbd9;
+  }
+  
+  /* .code {
+      margin-left: 5px;
+      width: 142px;
+      height: 42px;
+      text-align: center;
+      line-height: 42px;
+      font-size: 30px;
+      color: #325398;
+      font-weight: 900;
+  } */
+  
+  .code {
+    font-family: Arial;
+    font-style: italic;
+    font-size: 30px;
+    border: 0;
+    padding: 2px 3px;
+    letter-spacing: 3px;
+    font-weight: bolder;
+    float: left;
+    cursor: pointer;
+    width: 136px;
+    height: 40px;
+    margin-left: 6px;
+    margin-top: 20px;
+    line-height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #6D6D72;
+  }
+  
+  .xinpul {
+    float: left;
+    margin-top: 20px;
+    line-height: 45px;
+    color: #e7dbd9;
+    width: 262px;
+    height: 45px;
+  }
+  
+  .xinpur {
+    float: left;
+    margin-top: 20px;
+    width: 145px;
+    line-height: 44px;
+    font-size: 12px;
+    text-align: center;
+    height: 44px;
+    margin-left: 5px;
+    border: 1px solid #808080;
+  
+    a {
+      text-decoration: none;
+      color: #a50000;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  
+  .regbet {
+    width: 418px;
+    margin-top: 15px;
+    height: 78px;
+    float: left;
+  }
+  
+  .regbetlf {
+    width: 418px;
+    height: 28px;
+  
+    span {
+      line-height: 28px;
+      font-size: 14px;
+  
+      a {
+        color: #a50000;
+      }
+    }
+  }
+  
+  .regbetri {
+    width: 418px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 14px;
+    background: #808080;
+  
+    a {
+      color: white;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  
+  .foot {
+    height: 22px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .bottom {
+    width: 980px;
+    height: 85px;
+    margin-top: 30px;
+  
+    img {
+      height: 45px;
+      margin-left: 48px;
+    }
+  }
