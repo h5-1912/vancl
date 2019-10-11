@@ -1,0 +1,249 @@
+<!DOCTYPE html><html lang=en><head><meta charset=UTF-8><meta name=viewport content="width=device-width, initial-scale=1.0"><meta http-equiv=X-UA-Compatible content="ie=edge"><link rel=stylesheet href=./css/layout.css><title>注册</title><style>
+        .main {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            height: 59px;
+            border-bottom: solid 1px #919191;
+        }
+
+        .content {
+            height: 547px;
+            margin-top: 50px;
+        }
+
+        .cotent-lf {
+            float: left;
+            width: 465px;
+            height: 500px;
+            margin: 0 0 0 130px;
+        }
+
+        .cotent-lf img {
+            width: 400px;
+            height: 252px;
+            float: right;
+            margin-top: 100px;
+        }
+
+        .cotent-ri {
+            float: left;
+            width: 415px;
+            height: 423px;
+            float: right;
+            margin: 10px 95px 0 0;
+        }
+
+        .daha {
+            width: 415px;
+            height: 37px;
+            border-bottom: 3px solid #a50000;
+        }
+
+        .daha span {
+            line-height: 42px;
+            font-size: 20px;
+            color: #808080;
+        }
+
+        .daha span b {
+            font-weight: normal;
+            font-size: 16px;
+            color: #808080;
+            float: right;
+        }
+
+        .daha span b a {
+            color: #a50000;
+            text-decoration: none;
+        }
+
+        .daha span b a:hover {
+            text-decoration: underline;
+        }
+
+        .xzhuce {
+            margin-top: 30px;
+            width: 415px;
+            height: 45px;
+        }
+
+        .inputlf {
+            float: left;
+            width: 260px;
+            height: 42px;
+            color: #e7dbd9;
+        }
+
+        /* .code {
+            margin-left: 5px;
+            width: 142px;
+            height: 42px;
+            text-align: center;
+            line-height: 42px;
+            font-size: 30px;
+            color: #325398;
+            font-weight: 900;
+        } */
+
+        .code {
+            font-family: Arial;
+            font-style: italic;
+            font-size: 30px;
+            border: 0;
+            padding: 2px 3px;
+            letter-spacing: 3px;
+            font-weight: bolder;
+            float: left;
+            cursor: pointer;
+            width: 136px;
+            height: 40px;
+            margin-left: 6px;
+            margin-top: 20px;
+            line-height: 40px;
+            text-align: center;
+            vertical-align: middle;
+            border: 1px solid #6D6D72;
+        }
+
+        .xinpul {
+            float: left;
+            margin-top: 20px;
+            line-height: 45px;
+            color: #e7dbd9;
+            width: 262px;
+            height: 45px;
+        }
+
+        .xinpur {
+            float: left;
+            margin-top: 20px;
+            width: 145px;
+            line-height: 44px;
+            font-size: 12px;
+            text-align: center;
+            height: 44px;
+            margin-left: 5px;
+            border: 1px solid #808080;
+        }
+
+        .xinpur a {
+            text-decoration: none;
+            color: #a50000;
+        }
+
+        .xinpur a:hover {
+            text-decoration: underline;
+        }
+
+        .regbet {
+            width: 418px;
+            margin-top: 15px;
+            height: 78px;
+            float: left;
+        }
+
+        .regbetlf {
+            width: 418px;
+            height: 28px;
+        }
+
+        .regbetlf span {
+            line-height: 28px;
+            font-size: 14px;
+        }
+
+        .regbetlf span a {
+            color: #a50000;
+        }
+
+        .regbetri {
+            width: 418px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            font-size: 14px;
+            background: #808080;
+
+        }
+
+        .regbetri a {
+            color: white;
+        }
+
+        .regbetri a:hover {
+            text-decoration: underline;
+        }
+
+        .foot {
+            height: 22px;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .bottom {
+            width: 980px;
+            height: 85px;
+            margin-top: 30px;
+        }
+
+        .bottom img {
+            height: 45px;
+            margin-left: 48px;
+        }
+    </style></head><body><div class=main><div class=logo><a href=./index.html><img src=./images/detail/logo18546.png></a></div></div><div class="content main"><div class=cotent-lf><img src=./images/index/zuche_03.png></div><div class=cotent-ri><div class=daha><span>注册新用户<b>我已经注册，现在就<a>登录</a></b></span></div><div class=xzhuce><div class=xinpul><input type=text placeholder=请输入验证码 style="width:260px; height:42px;" onclick=valdatecode()></div><div id=check-code style="overflow: hidden;"><div class=code id=data_code></div></div></div><div class=xinpul><input type=text placeholder=请输入手机号码 style="width:260px; height:42px;"></div><div class=xinpur><a>请输入验证码</a></div><div class=xinpul><input type=text placeholder=填写手机验证码 style="width:415px; height:42px;"></div><div class=xinpul><input type=text placeholder=设定登录密码 style="width:415px; height:42px;" id=pw></div><div class=xinpul><input type=text placeholder=再次输入密码 style="width:415px; height:42px;"></div><div class=regbet><div class=regbetlf><span><input id=chk_agreen type=checkbox> <label for=chk_agreen style="width: 100%; float: none;">请阅读<a class=reda>《VANCL凡客诚品服务条款》</a></label></span></div><div class=regbetri id=regbetri><a>立即注册</a></div></div></div></div><div class=footb><div class="foot main"><p>Copyright 2007 - 2019 vancl.com All Rights Reserved 京ICP证100557号 京公网安备11011502002400号 出版物经营许可证新出发京批字第直110138号</p><br></div></div><div class="bottom main"><a><img src=./images/index/t1.jpg></a> <a><img src=./images/index/t2.jpg></a> <a><img src=./images/index/t3.jpg></a> <a><img src=./images/index/t4.jpg></a> <a><img src=./images/index/t5.jpg></a> <a><img src=./images/index/t6.jpg></a></div><script src=./js/jquery1.12.4.min.js></script><script>
+        $.fn.code_Obj = function (o) {
+            var _this = $(this);
+            var options = {
+                code_l: o.codeLength,
+                codeChars: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9,
+                    'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
+                    'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'
+                ],
+                codeColors: ['#f44336', '#009688', '#cddc39', '#03a9f4', '#9c27b0', '#5e4444', '#9ebf9f', '#ffc8c4', '#2b4754', '#b4ced9', '#835f53', '#aa677e'],
+                code_Init: function () {
+                    var code = "";
+                    var codeColor = "";
+                    var checkCode = _this.find("#data_code");
+                    for (var i = 0; i < this.code_l; i++) {
+                        var charNum = Math.floor(Math.random() * 52);
+                        code += this.codeChars[charNum];
+                    }
+                    for (var i = 0; i < this.codeColors.length; i++) {
+                        var charNum = Math.floor(Math.random() * 12);
+                        codeColor = this.codeColors[charNum];
+                    }
+                    if (checkCode) {
+                        checkCode.css('color', codeColor);
+                        checkCode.className = "code";
+                        checkCode.text(code);
+                        checkCode.attr('data-value', code);
+                    }
+                }
+            };
+
+            options.code_Init();
+            _this.find("#data_code").bind('click', function () {
+                options.code_Init();
+            });
+        };
+
+        $('#check-code').code_Obj({
+            codeLength: 5
+        });
+        var chk_agreen = document.getElementById('chk_agreen');
+        var regbetri = document.getElementById("regbetri");
+        var chkfn = document.getElementById('chkfn');
+        var flag = true;
+        chk_agreen.onclick = function () {
+            if (flag) {
+                regbetri.style.background = "#a50000";
+                flag=!flag;
+            } else {
+                regbetri.style.background = "#808080";
+                flag=!flag;
+            }
+        }
+    </script></body></html>

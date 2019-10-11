@@ -1,0 +1,39 @@
+/* 首标题 */
+
+#title {
+    height: 60px;
+
+    /* background:black; */
+    margin-top: 20px;
+}
+
+.title {
+    height: 60px;
+    width: 1325px;
+    margin: 0 auto;
+    background: #856a4f;
+    position: relative;
+
+    p a {
+        font-size: 28px;
+        font-weight: bold;
+        color: white;
+        position: absolute;
+        margin-top: 10px;
+        margin-left: 580px;
+    }
+
+    div a {
+        width: 135px;
+        height: 40px;
+        position: absolute;
+        margin-top: 10px;
+        margin-left: 1100px;
+        background: white;
+        border-radius: 50px;
+        font-size: 25px;
+        color: #856a4f;
+        text-align: center;
+        line-height: 40px;
+    }
+}

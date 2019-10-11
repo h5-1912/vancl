@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车 - VANCL 凡客诚品</title>
+    <link rel="stylesheet" href="./css/car.css">
+</head>
+<body>
+    <div class="content">
+        <div class="car-header">
+            <p class="logo">
+                <a href="#">
+                    <img src="./images/index/vancl-logo.png" alt="">
+                </a>
+            </p>
+            <div class="nav-right">
+                <span class="text">您好，欢迎光临凡客诚品。</span>
+                <p>
+                    <a href="#" class="login">登录</a>
+                    <a href="#" class="register">注册</a>
+                </p>
+                <a href="javascript:;" class="help">帮助中心</a>
+            </div>
+        </div>
+        <div class="location">
+            <em>1.我的购物车</em>
+            <span class="fill">2.填写核对信息单</span>
+            <span class="submit">3.成功提交订单</span>
+        </div>
+        <div class="getCar">
+            <p class="shop">您的购物车中没有商品，请您先
+                <a href="#">选购商品>></a>
+            </p>
+            <div class="massage">
+                <p class="myCar">
+                    <span class="myCar-img"></span>
+                    <span class="myCar-text">我的购物车</span>
+                </p>
+                <p class="xinxi">
+                    <i>温馨提示：</i>1.选购清单中的商品无法保留库存，请您及时结算。2.商品的价格和库存将以订单提交时为准。3.促销活动满减优惠将均摊至商品小计中。</p>
+            </div>
+            <div class="shopping-car">
+                <ul class="car-list">
+                    <li class="check">
+                        <input type="checkbox">全选
+                    </li>
+                    <li class="name">商品名称</li>
+                    <li class="size">尺寸</li>
+                    <li class="price">单价</li>
+                    <li class="numble">数量</li>
+                    <li class="yh">优惠</li>
+                    <li class="xj">小计</li>
+                    <li class="cz">操作</li>
+                </ul>
+                    <table id="car">
+
+                    </table>
+            </div>
+            <div class="shopping-price">
+                <div class="left">
+                    <div class="shopping-option">
+                        <input type="checkbox" id="checkbox">
+                        <i class="checkAll">全选</i>
+                        <i class="delete">删除</i>
+                        <span class="nums">数量件数：
+                            <i class="packages">0</i>件</span>
+                    </div>
+                    <div class="price-allprice">
+                        <i>活动优惠：
+                            <span class="price-yh"></span>
+                        </i>
+                        <br>
+                        <i>产品金额总计(不含运费)：</i>
+                        <span id="allPrice">￥
+                            <input type="text" class="allPrice" value="">
+                        </span>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="car_calculate">
+                        <a href="#" class="jshopping">继续购物</a>
+                        <a href="javascript:;" class="price-sum">去结算</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Copyright 2007 - 2018 vancl.com All Rights Reserved 京ICP证100557号 京公网安备11010102000579号 出版物经营许可证新出发京批字第直110138号</p>
+            <p>
+                <img src="../images/index/cert-redlogo.gif">
+                <img src="../images/index/cert-costumeorg.gif">
+                <img src="../images/index/cert-wsjybzzx.gif">
+            </p>
+        </div>
+    </div>
+</body>
+<script src="./js/mycart.js"></script>
+</html>

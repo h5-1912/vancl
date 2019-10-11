@@ -1,0 +1,608 @@
+    .header {
+    width: 100%;
+    height: 32px;
+    background: #e8eaed;
+    border-bottom: 1px solid #b6b4b6;
+}
+.main {
+    width: 1200px;
+    margin: 0 auto;
+}
+.xtop {
+    height: 32px;
+    line-height: 32px;
+    float: right;
+    color: #808080;
+}
+.xleft {
+    float: left;
+}
+.xcenter {
+    float: left;
+    
+}
+.xweixin{
+position:absolute;
+top:21px;
+left:-116px;
+z-index:2;
+}
+#ximg{
+    display: none;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.right {
+    position: relative;
+    float: left;
+}
+
+.xcenter img{
+    margin-top: 6px;
+}
+
+.right img {
+    margin-top: 6px;
+}
+ /* a {
+    color: #808080;
+} */
+p{
+    font-size: 12px;
+}
+.xcenter a:hover {
+    color: #d94646;
+}
+.xheader-nav {
+    height: 110px;
+    overflow: hidden;
+}
+.xbox {
+    float: right;
+}
+.xsearch {
+    width: 400px;
+    height: 40px;
+    float: left;
+    box-sizing: border-box;
+    margin-top: 34px;
+}
+.xseacher {
+    width: 310px;
+    float: left;
+    height: 32px;
+    border: 1px solid rgb(0, 0, 0);
+}
+.inp {
+    width: 310px;
+    height: 32px;
+    border: none;
+    font-size:12px;
+}
+.xsearch a {
+    display: block;
+    width: 68px;
+    height: 34px;
+    line-height: 32px;
+    text-align: center;
+    float: left;
+    color: white;
+    border: none;
+    background: #d94646;
+}
+element.style {
+    display: block;
+    width: 25px;
+    height: 13px;
+    background: url(http://i3.vanclimg.com/cms/20170329/icon_hot.png) no-repeat scroll;
+    position: absolute;
+    left: 67px;
+    top: -5px;
+}
+element.style {
+    display: block;
+    width: 25px;
+    height: 13px;
+    background: url(http://i5.vanclimg.com/cms/20170308/new_0308.png) no-repeat scroll;
+    position: absolute;
+    left: 62px;
+    top: -5px;
+}
+.shoping{
+    background: url("../images/blouse/vanclsprite.png") no-repeat;
+    height: 34px;
+    width: 168px;
+    margin-left: 22px;
+    float: left;
+    margin-top: 33px;
+}
+.shoping>a {
+    height: 50px;
+    width: 100px;
+    position: relative;
+}
+.shoping>a>span {
+    position: absolute;
+    width: 200px;
+    top: 10px;
+    left: 70px;
+    color: white;
+}
+.xminword{
+    width: 460px;
+    height: 20px;
+    margin-top:70px;
+}
+.xminword ul>li{
+    float: left;
+    text-align: center;
+    line-height: 12px;
+    color: #727171;
+    margin-left: 10px;
+    font-size: 12px;
+}
+.xminword ul>li>a{
+    color: #727171;
+}
+.xselect-left {
+    width: 185px;
+    height: 52px;
+    float: left;
+}
+.xselect-right {
+    width: 1015px;
+    float: left;
+    height: 52px;
+    font-size: 17px;
+}
+.xwrap {
+    width: 1015px;
+    height: 30px;
+    margin-top:20px;
+    
+    padding-left: 10px;
+  }
+  
+  .xwrap li {
+    border-right: 1px solid #888888;
+  }
+  
+  .xwrap > ul > li {
+    float: left;
+    width: 100px;
+    position: relative;
+  }
+  
+  .xwrap a {
+    display: block;
+    height: 30px;
+    width: 100px;
+    text-decoration: none;
+    color: #727171;
+    line-height: 30px;
+    text-align: center;
+  }
+  
+  .xwrap li ul {
+    width: 100px;
+    position: absolute;
+    top: 30px;
+    background:#ffffff;
+    border-top: 5px solid #a50000;
+    display: none;
+    z-index: 2;
+  }
+  .xwrap li ul li{
+    border-right: 0px;
+  }
+  .xwarp-nav{
+      float: left;
+      width: 120px;
+  }
+  .xselect-right a:hover{
+      color: #d90009;
+  }
+  .slider{
+      width: 1200px;
+      height: 535px;
+      margin-top:20px;
+      float: left;
+      position: relative;
+     background: #d94646;
+  }
+  .slider>ul>li{
+      position: absolute;
+  }
+
+.prev{
+    position: absolute;
+    left: 10px;
+    margin-top:246px;
+    width: 30px;
+    height: 60px;
+    background: url(../images/blouse/cslef.png) no-repeat;
+}
+.next{
+    position: absolute;
+    right: 10px;
+    margin-top:246px;
+    width: 30px;
+    height: 60px;
+    background: url(../images/blouse/csrig.png) no-repeat;
+}
+.xnav-one img{
+    padding-top: 48px;
+}
+.xnav-two img{
+    width: 100%;
+    padding-top: 32px;
+}
+.all{
+    float: left;
+}
+.xpic{
+    height:542px;
+}
+.xpic>ul>li{
+    width: 232px;
+    height: 420px;
+    float: left;
+}
+.xpic ul li img{
+    margin-top: 50px;
+}
+.xproduct{
+    font-size: 16px;
+    color: #474747;
+    margin-top: 20px;
+}
+.xproducty{
+    font-size: 16px;
+    text-decoration: line-through;
+    margin-top: 30px;
+    color: #d3d3d3;
+}
+.xproducte{
+    color: #bb2b34;
+    font-size: 16px;
+}
+.xCZ{
+    margin-left: 106px;
+}
+.xB{
+    
+    font-size: 26px;
+    color: #bb2b34;
+}
+.xstrong{
+    font-size: 26px;
+    color: #bb2b34;
+}
+.xproduct1{
+    font-size: 16px;
+    color: #474747;
+    margin-top: 26px;
+}
+.xpic ul .out{
+    height: 420px;
+    width: 272px;
+}
+.xminder img{
+    width: 100%;
+}
+.footb{
+    margin-top:5px;
+    width: 100%;
+    height: 80px;
+    border-top: 1px solid black;
+}
+.foot{
+    height: 80px;
+    text-align: center;
+    margin-top:10px;
+}
+.bottom{
+    width: 980px;
+    height: 85px;
+    margin-top:30px;
+}
+.bottom img{
+    height: 45px;
+    margin-left: 48px;
+}
+.fixed{
+    position: fixed;
+    right: 10px;
+    bottom: 50px;
+   
+}
+.fixed img{
+    width: 70px;
+    height: 282px;
+}
+.xtbody{
+    height: 856px;
+}
+.yifu{
+height: 406px;
+width: 268px;
+float: left;
+margin-top: 32px;
+margin-left: 25px;
+}
+.yifus{
+    height: 100px;
+    text-align: center;
+    margin-top: 20px;
+    background:#d90009;
+   font-size: 20px;
+   line-height: 30px;
+}
+.yifus span b{
+    font-size: 30px;
+}
+.yifus span a{
+    color: #ffffff;
+}
+.xend{
+    height: 284px;
+    border: #808080 1px solid;
+}
+.xendz{
+    width: 1118px;
+    height: 204px;;
+    margin-left: 40px;
+}
+.xendz ul{
+    width: 371px;
+    height: 138px;
+    float: left;
+    margin-top: 10px;
+    border-right: 1px solid #e0e0e1;
+}
+.xendz ul li{
+    width: 371px;
+    height: 70px;
+}
+.xendz ul li img{
+    margin-left: 168px;
+    margin-top: 10px;
+    float: left;
+}
+.xsp{
+    width: 156px;
+    height: 32px;
+    background: #bb2b34;
+    text-align: center;
+    line-height: 32px;
+    margin-left: 122px;
+    font-size: 18px;
+    color: #ffffff;
+}
+.xzhong p{
+    width: 156px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    margin-left: 112px;
+    font-size: 16px;
+    color:#808080;
+}
+.xyou{
+    width: 156px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    margin-left: 156px;
+    font-size: 16px;
+    margin-top: 50px;
+    color:#808080;
+}
+.xyou b{
+    color:#bb2b34;
+}
+.xbox ul{
+    border: none;
+}
+.xboxs{
+    width: 1118px;
+    height: 57px;
+    background:#f8f8f8;
+}
+.xboxs ul li{
+    width: 179px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    margin-top: 16px;
+    margin-left: 6px;
+    float: left;
+    border-right: 1px solid #e0e0e1;
+}
+.xboxs .lis li{
+    border:none;
+}
+.xmetter{
+    height: 100px;
+    line-height: 150px;
+    text-align: center;
+    font-size: 16px;
+    color: #808080;
+}
+.xsan{
+    height: 706px;
+    margin-top:56px;
+}
+.xsan li{
+    width: 385px;
+    height: 275px;
+    float: left;
+    margin-left: 12px;
+    margin-top: 8px
+}
+.xget{
+    height: 582px;
+    margin-top: 20px;
+}
+.xworld h2{
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #9a9a9a;
+}
+.xpants{
+    height: 500px;
+}
+.xpants ul li{
+width: 272px;
+height: 508px;
+}
+.xpants img{
+    width: 100%;
+    height: 80%;
+}
+.niuzai{
+    width: 308px;
+    height: 50px;
+    background: #474747;
+}
+.yifu h3{
+    height: 50px;
+    line-height: 50px;
+border-left: 1px solid #e8e7ec;
+border-right: 1px solid #e8e7ec;
+border-bottom: 1px solid #e8e7ec;
+}
+.yifu h3 span{
+    margin-left: 10px;
+    font-weight: normal;
+    
+}
+.yifu h3 strong{
+    margin-left: 92px;
+    color: #aa0000;
+    font-weight: normal;
+}
+.xxing{
+    height:582px;
+}
+.xxingzhuang{
+    height: 526px;
+}
+.xxing h2 {
+    text-align: center;
+    line-height: 50px;
+    margin: 30px 0px;
+    font-family: "Microsoft YaHei";
+    color: #9a9a9a;
+    font-size: 18px;
+}
+.xxing ul{
+    float: left;
+}
+.xtuij{
+    float: left;
+    height: 55px;
+    line-height: 50px;
+    width: 588px;
+   
+    border-top:none;
+}
+.xtuij span{
+    margin-left: 15px;
+    font-size: 14px;
+
+}
+.xtuijs{
+    width: 588px;
+    border: 1px solid #e8e7ec;
+}
+.xtuij span b{
+    font-size: 14px;
+    float:right;
+    font-weight: normal;
+    margin-right: 15px;
+    color: #a50000;
+}
+.xtuimin{
+    float: left;
+    margin-left: 28px;
+    width: 290px;
+    height: 180px;
+    background: #474747
+}
+.xtuimin span{
+    margin-left: 15px;
+    font-size: 14px;
+    line-height: 45px;
+
+}
+.xtuimin span b{
+    font-size: 14px;
+    float:right;
+    font-weight: normal;
+    margin-right: 15px;
+    color: #a50000;
+}
+.xtuimins{
+    height: 55px;
+    border: 1px solid #e8e7ec;
+    border-top: none;
+}
+.xtuix{
+    float: left;
+    margin-left: 4px;
+    width: 290px;
+    height: 180px;
+    background: #474747;
+    margin-top: 20px;
+}
+.xtuixs{
+    float: left;
+    height: 55px;
+    width: 288px;
+    border: 1px solid #e8e7ec;
+    border-top: none;
+}
+.xtuiri{
+    width: 274px;
+    height: 400px;
+    background: #474747;
+    float: left;
+    margin-left: 20px;
+}
+.xtuiris{
+    height: 50px;
+    width: 282px;
+    border: 1px solid #e8e7ec;
+    border-top: none;  
+}
+.xtuiris span{
+    margin-left: 15px;
+    font-size: 14px;
+    line-height: 45px;
+}
+.xtuiris span b{
+    font-size: 14px;
+    float:right;
+    font-weight: normal;
+    margin-right: 15px;
+    color: #a50000;
+}
+.xboxes{
+    height: 580px;
+    background:white;
+}
+.xboxes img{
+    border:none;
+    margin-left: 5px;
+}
+.xpeople{
+    height: 580px;
+    background: white;
+}
+.xpeople img{
+    border:none;
+    margin-left: 5px;
+}
