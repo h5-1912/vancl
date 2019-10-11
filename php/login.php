@@ -55,7 +55,7 @@ switch($act){
 		if((int)$row[0]>0){
 		
 			echo $_GET['callback'].'({"err":"0","msg":"登录成功"})';
-			
+			setcookie('un',$user,time()+24*60*60);
 			exit();
 		}else{
 		

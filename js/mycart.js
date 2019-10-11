@@ -1,4 +1,10 @@
 window.onload = function () {
+    var shop=this.document.getElementById('shop-more');
+    var getcar=this.document.getElementById('get-car');
+    var shoppingprice=this.document.getElementById('shoppingprice');
+    var priceNum=0;
+    var zj=this.document.getElementById('allPrice');
+    var xjs=this.document.getElementById('xj');
     var util = {
         getStorage: function () {
             //获取本地存储:list
@@ -13,9 +19,14 @@ window.onload = function () {
 
             if (productList.length < 1) {
                 container.innerHTML = '';
+                shop.style="display:block";
+                getcar.style="height:200px";
+                shoppingprice.style="top:300px";
+                priceNum=0;
+                zj.innerHTML="￥"+priceNum;
                 return;
             }
-
+            shop.style="display:none";
             var str = ``;
 
             for (var i = 0; i < productList.length; i++) {
@@ -38,12 +49,15 @@ window.onload = function () {
                     <span class="delete btn-info btn">删除</span>
                 </td>
             </tr>`
+            priceNum+=parseInt(productList[i].price)*parseInt(productList[i].num);
             }
             container.innerHTML=str;
-
+            zj.innerHTML="￥"+priceNum;
             if (fn) {
                 fn()
+                
             }
+
         },
         addDeleteEvent: function () {
             //对象的方法中的this指的是当前的实例对象
@@ -54,7 +68,7 @@ window.onload = function () {
                 deleteBtns[i].onclick = function () {
                     //事件函数中的this指的是当前的事件源
                     //调用deleteProduct函数,删除指定商品
-                    var name = this.parentNode.parentNode.children[2].innerHTML;
+                    var name = this.parentNode.parentNode.children[3].innerHTML;
                     that.deleteProduct(name);
                 }
             }
@@ -69,11 +83,11 @@ window.onload = function () {
             for (var i = 0; i < addBtns.length; i++) {
                 addBtns[i].onclick = function () {
                     //在事件函数中this指的是当前的事件源
-                    var name = this.parentNode.parentNode.children[2].innerHTML;
+                    var name = this.parentNode.parentNode.children[3].innerHTML;
                     that.addNum(name);
                 }
                 cutBtns[i].onclick = function () {
-                    var name = this.parentNode.parentNode.children[2].innerHTML;
+                    var name = this.parentNode.parentNode.children[3].innerHTML;
                     that.cutNum(name)
                 }
             }
@@ -82,10 +96,11 @@ window.onload = function () {
             var that = this;
             var productList = this.getStorage();
             for (var i = 0; i < productList.length; i++) {
-                if (productList[i].name == name) {
+                if (productList[i].size == name) {
                     productList.splice(i, 1);
                     //更新本地存储,更新购物车
                     this.setStorage(productList);
+                    priceNum=0;
                     this.render(productList, 'car', function () {
                         //普通函数中的this指的是window
                         that.addDeleteEvent();
@@ -99,11 +114,11 @@ window.onload = function () {
             var that = this;
             var productList = this.getStorage();
             for (var i = 0; i < productList.length; i++) {
-                if (productList[i].name == name) {
+                if (productList[i].size == name) {
                     productList[i].num = productList[i].num + 1;
-                    console.log(productList[i].num)
                     //更新本地存储,更新购物车
                     this.setStorage(productList);
+                    priceNum=0;
                     this.render(productList, 'car', function () {
                         //普通函数中的this指的是window
                         that.addDeleteEvent();
@@ -114,10 +129,11 @@ window.onload = function () {
             }
         },
         cutNum: function (name) {
+            priceNum=0;
             var that = this;
             var productList = this.getStorage();
             for (var i = 0; i < productList.length; i++) {
-                if (productList[i].name == name) {
+                if (productList[i].size == name) {
                     productList[i].num = productList[i].num - 1;
                     //如果减完以后小于等于0,就删除该商品
                     if (productList[i].num <= 0) {
